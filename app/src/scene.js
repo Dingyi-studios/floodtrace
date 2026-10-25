@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {FlowField,FloodWater,applyInundationMaterial} from './flood-water.js';
+import {RainView} from './rain-view.js';
+import {OperationsView} from './operations-view.js';
 
 export class FloodScene{
  constructor(container,data,surface,onInspect,onHover){
@@ -13,11 +15,12 @@ export class FloodScene{
   this.scene=new THREE.Scene();this.scene.background=new THREE.Color('#dce6e7');this.scene.fog=new THREE.Fog('#dce6e7',3200,7200);
   this.camera=new THREE.PerspectiveCamera(40,w/h,1,18000);this.camera.position.set(950,950,1900);
   this.controls=new OrbitControls(this.camera,this.renderer.domElement);this.controls.target.set(140,30,470);this.controls.enableDamping=true;this.controls.dampingFactor=.09;this.controls.minDistance=65;this.controls.maxDistance=4500;this.controls.maxPolarAngle=Math.PI*.475;this.controls.minPolarAngle=.03;this.controls.zoomSpeed=.8;this.controls.panSpeed=.8;this.controls.autoRotateSpeed=.35;
-  this.controls.addEventListener('start',()=>{this.fly=null;this.controls.autoRotate=false});
+  this.controls.addEventListener('start',()=>{this.fly=null;this.followXY=null;this.controls.autoRotate=false});
   this.scene.add(new THREE.HemisphereLight('#dfeef2','#7c8b69',1.65));
   const sun=new THREE.DirectionalLight('#ffefcf',2.7);sun.position.set(-1300,2200,-900);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-2100;sun.shadow.camera.right=2100;sun.shadow.camera.top=1800;sun.shadow.camera.bottom=-1800;sun.shadow.camera.near=100;sun.shadow.camera.far=7000;sun.shadow.bias=-.0002;sun.shadow.normalBias=.45;this.scene.add(sun);this.sun=sun;
   this.world=new THREE.Group();this.scene.add(this.world);
   this.buildTerrain();this.buildBuildings();this.buildLines();this.buildParkedCars();this.buildVegetation();this.buildWater();this.buildMarkers();
+  this.rainView=new RainView(this.world,(x,z)=>Math.max(this.height(x,z),this.field.sample(x,z)?.stage??-100));this.operationsView=new OperationsView(this);this.operationsView.root.visible=false;
   this.ray=new THREE.Raycaster();this.pointer=new THREE.Vector2();let down;
   container.addEventListener('pointerdown',e=>down={x:e.clientX,y:e.clientY});
   container.addEventListener('pointermove',e=>this.hover(e));
@@ -164,6 +167,8 @@ export class FloodScene{
   return {depth,stage:Number.isFinite(stage)?stage:null,floors:Math.min(b.floors,Math.floor(depth/2.9)),status,roofLevel:b.ground+roof};
  }
  buildingSeries(index){const b=this.data.geography.buildings[index],points=this.buildingSamples(index);return Array.from({length:this.field.grid.frames},(_,f)=>{let stage=-Infinity;for(const xy of points){const q=this.field.sampleFrame(...xy,f);if(q&&q.depth>.05)stage=Math.max(stage,q.stage)}return{t:f*this.surface.step,value:Number.isFinite(stage)?Math.max(0,stage-b.ground):0}})}
+ setModel(model){this.surface=model;this.field.useModel(model);this.waterView.uniforms.uDepthScale.value=model.kind.includes('historical')?2.5:.25;this.waterView.resetOnUpdate=true;this.waterView.lastPhysicalTime=0;}
+ setOperations(plan){this.operationsView.setPlan(plan)}
  setParticleDensity(count){this.waterView.setDensity(count)}
  viewPreset(kind){
   this.controls.autoRotate=false;
@@ -171,8 +176,8 @@ export class FloodScene{
   const xy=kind==='inflow'?[-525,1060]:(this.surface.viewpoints?.district||[-65,820]);
   this.focus(xy,kind==='inflow'?680:380);
  }
- setLayer(id,value){if(id==='terrain'){this.terrain.visible=value;this.skirt.visible=value;if(this.vegetation)this.vegetation.visible=value;return}if(id==='flood')this.field.enabledUniform.value=value?1:0;if(this.layers[id])this.layers[id].visible=value}
- setOpacity(id,value){if(id==='flood'){this.waterView.uniforms.uOpacity.value=value;return}if(!this.layers[id])return;this.layers[id].traverse(o=>{if(o.material){o.material.transparent=true;o.material.opacity=value}})}
+ setLayer(id,value){if(id==='rain'){this.rainView.enabled=value;return}if(['risk','people','patrol','assembly','evacRoutes'].includes(id)){this.operationsView.setLayer(id,value);return}if(id==='terrain'){this.terrain.visible=value;this.skirt.visible=value;if(this.vegetation)this.vegetation.visible=value;return}if(id==='flood')this.field.enabledUniform.value=value?1:0;if(this.layers[id])this.layers[id].visible=value}
+ setOpacity(id,value){if(id==='rain'){this.rainView.strength=value;return}if(id==='risk'){this.operationsView.riskUniforms.uOpacity.value=value;return}if(id==='flood'){this.waterView.uniforms.uOpacity.value=value;return}if(!this.layers[id])return;this.layers[id].traverse(o=>{if(o.material){o.material.transparent=true;o.material.opacity=value}})}
  setExaggeration(value){this.exag=Number(value);this.exagUniform.value=this.exag;this.world.scale.y=this.exag;this.updateSelection()}
  setMode(mode){
   if(mode===this.mode)return;this.fly=null;const target=this.controls.target.clone(),dist=this.camera.position.distanceTo(target),aspect=this.container.clientWidth/this.container.clientHeight;
@@ -184,18 +189,18 @@ export class FloodScene{
    this.camera=this.perspectiveCamera;this.camera.aspect=aspect;this.camera.position.copy(target).add(this.saved3D||new THREE.Vector3(1000,1500,1700));this.camera.lookAt(target);
   }this.camera.updateProjectionMatrix();this.controls.object=this.camera;this.controls.update();
  }
- focus(xy,distance=900){this.controls.autoRotate=false;const target=new THREE.Vector3(xy[0],this.height(...xy)*this.exag,xy[1]);if(this.camera.isOrthographicCamera){this.camera.zoom=this.orthoHeight/(distance*.75);this.camera.updateProjectionMatrix()}const offset=this.mode==='2D'?new THREE.Vector3(0,3000,.01):new THREE.Vector3(distance*.46,distance*.66,distance*.7);this.flyTo(target.clone().add(offset),target)}
- overview(){this.controls.autoRotate=false;if(this.camera.isOrthographicCamera){this.camera.zoom=this.orthoHeight/1650;this.camera.updateProjectionMatrix()}const target=new THREE.Vector3(140,30,470),p=this.mode==='2D'?new THREE.Vector3(140,3030,470.01):new THREE.Vector3(950,950,1900);this.flyTo(p,target)}
+ focus(xy,distance=900){this.followXY=null;this.controls.autoRotate=false;const target=new THREE.Vector3(xy[0],this.height(...xy)*this.exag,xy[1]);if(this.camera.isOrthographicCamera){this.camera.zoom=this.orthoHeight/(distance*.75);this.camera.updateProjectionMatrix()}const offset=this.mode==='2D'?new THREE.Vector3(0,3000,.01):new THREE.Vector3(distance*.46,distance*.66,distance*.7);this.flyTo(target.clone().add(offset),target)}
+ overview(){this.followXY=null;this.controls.autoRotate=false;if(this.camera.isOrthographicCamera){this.camera.zoom=this.orthoHeight/1650;this.camera.updateProjectionMatrix()}const target=new THREE.Vector3(140,30,470),p=this.mode==='2D'?new THREE.Vector3(140,3030,470.01):new THREE.Vector3(950,950,1900);this.flyTo(p,target)}
  flyTo(pos,target){this.fly={start:performance.now(),from:this.camera.position.clone(),fromTarget:this.controls.target.clone(),to:pos,target}}
  zoom(factor){if(this.camera.isOrthographicCamera){this.camera.zoom/=factor;this.camera.updateProjectionMatrix()}else this.camera.position.sub(this.controls.target).multiplyScalar(factor).add(this.controls.target);this.controls.update()}
  select(id,xy){this.selected=id;this.selectedXY=xy;this.updateSelection()}
- updateSelection(){if(!this.selectedXY)return;this.selectionRing.visible=true;this.selectionRing.position.set(this.selectedXY[0],Math.max(this.height(...this.selectedXY)+.25,this.field.sample(...this.selectedXY)?.stage+.20||0),this.selectedXY[1])}
+ updateSelection(){if(!this.selectedXY)return;this.selectionRing.visible=true;this.selectionRing.scale.setScalar(this.selected?.startsWith('T')?.22:this.selected?.startsWith('E')?.48:1);this.selectionRing.position.set(this.selectedXY[0],Math.max(this.height(...this.selectedXY)+.25,this.field.sample(...this.selectedXY)?.stage+.20||0),this.selectedXY[1])}
  addRoute(points){if(this.route){this.world.remove(this.route)}this.route=new THREE.Group();this.route.add(this.line(points,'#c6944f',1,3,true));this.route.add(this.ribbon(points,4,'#d8a965',2));this.world.add(this.route);this.route.visible=false}
  showRoute(show){if(this.route)this.route.visible=show}
  moveMarker(id,xy){const m=this.markers.get(id);if(!m)return;if(id==='R01'&&Math.hypot(xy[0]-m.xy[0],xy[1]-m.xy[1])>.01)m.mesh.rotation.y=Math.atan2(xy[0]-m.xy[0],xy[1]-m.xy[1]);m.xy=xy;m.mesh.position.set(xy[0],this.height(...xy)+(id==='R01'?.5:5),xy[1]);if(this.selected===id){this.selectedXY=xy;this.updateSelection()}}
  pointerRay(e){const r=this.renderer.domElement.getBoundingClientRect();this.pointer.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);this.ray.setFromCamera(this.pointer,this.camera)}
- pick(e){this.pointerRay(e);let hit=this.ray.intersectObjects([...this.markers.values()].filter(m=>m.mesh.visible&&this.layers.sensors.visible).map(m=>m.mesh),true)[0];if(hit){this.onInspect(hit.object.userData.id);return}if(this.layers.network.visible){hit=this.ray.intersectObject(this.networkDots)[0];if(hit){this.onInspect(this.data.nodes[hit.instanceId].id);return}}if(this.layers.buildings.visible){hit=this.ray.intersectObjects([this.buildingMesh,this.roofMesh],false)[0];if(hit){const index=hit.object.userData.owners[hit.faceIndex];this.onInspect('B'+String(index).padStart(4,'0'))}}}
+ pick(e){this.pointerRay(e);const operationHit=this.operationsView.pick(this.ray);if(operationHit){const cover=this.ray.intersectObjects([this.terrain,...(this.layers.buildings.visible?[this.buildingMesh,this.roofMesh]:[])],false)[0];if(!cover||operationHit.distance<cover.distance+.2){this.onInspect(operationHit.id);return}}let hit=this.ray.intersectObjects([...this.markers.values()].filter(m=>m.mesh.visible&&this.layers.sensors.visible).map(m=>m.mesh),true)[0];if(hit){this.onInspect(hit.object.userData.id);return}if(this.layers.network.visible){hit=this.ray.intersectObject(this.networkDots)[0];if(hit){this.onInspect(this.data.nodes[hit.instanceId].id);return}}if(this.layers.buildings.visible){hit=this.ray.intersectObjects([this.buildingMesh,this.roofMesh],false)[0];if(hit){const index=hit.object.userData.owners[hit.faceIndex];this.onInspect('B'+String(index).padStart(4,'0'))}}}
  hover(e){if(this.frame%3!==0)return;this.pointerRay(e);const hit=this.ray.intersectObject(this.terrain)[0];if(!hit){this.onHover(null);return}const p=hit.point;this.onHover({x:e.offsetX,y:e.offsetY,xy:[p.x,p.z],elevation:this.height(p.x,p.z),depth:this.layers.flood.visible?this.depthAt(p.x,p.z):null})}
  project(xy,offset=24){const p=new THREE.Vector3(xy[0],(this.height(...xy)+offset)*this.exag,xy[1]).project(this.camera);return{x:(p.x+1)/2*this.container.clientWidth,y:(1-p.y)/2*this.container.clientHeight,visible:p.z<1&&Math.abs(p.x)<1.1&&Math.abs(p.y)<1.1}}
- animate(){requestAnimationFrame(()=>this.animate());this.frame++;if(this.fly){let t=Math.min(1,(performance.now()-this.fly.start)/850);t=1-Math.pow(1-t,3);this.camera.position.lerpVectors(this.fly.from,this.fly.to,t);this.controls.target.lerpVectors(this.fly.fromTarget,this.fly.target,t);if(t>=1)this.fly=null}this.controls.update();this.waterView?.update(performance.now(),this.camera,this.controls.target);this.renderer.render(this.scene,this.camera);this.onRender?.();}
+ animate(){requestAnimationFrame(()=>this.animate());this.frame++;if(this.fly){let t=Math.min(1,(performance.now()-this.fly.start)/850);t=1-Math.pow(1-t,3);this.camera.position.lerpVectors(this.fly.from,this.fly.to,t);this.controls.target.lerpVectors(this.fly.fromTarget,this.fly.target,t);if(t>=1)this.fly=null}if(!this.fly&&this.followXY){const xy=this.followXY();if(xy){const next=new THREE.Vector3(xy[0],this.height(...xy)*this.exag,xy[1]),delta=next.clone().sub(this.controls.target);this.camera.position.add(delta);this.controls.target.copy(next)}}this.controls.update();this.waterView?.update(performance.now(),this.camera,this.controls.target);this.rainView?.update(performance.now(),this.camera,this.controls.target);this.operationsView?.update(this.getPhysicalTime?.()??this.time??0);this.renderer.render(this.scene,this.camera);this.onRender?.();}
 }

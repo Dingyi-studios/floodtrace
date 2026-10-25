@@ -1,6 +1,6 @@
 export const fmt=(v,n=2)=>v==null?'—':Number(v).toFixed(n);
 export function at(series,t){if(!series?.length)return null;let lo=0,hi=series.length-1;if(t<series[0].t||t>series[hi].t)return null;while(lo<hi){let m=Math.ceil((lo+hi)/2);if(series[m].t<=t)lo=m;else hi=m-1}const a=series[lo],b=series[Math.min(lo+1,series.length-1)];if(a.value==null||b.value==null)return a.t===t?a.value:null;const u=b.t===a.t?0:(t-a.t)/(b.t-a.t);return a.value+(b.value-a.value)*u}
-export function chart({title,unit,series,t,duration,subtitle='',colors=['#528f87','#c28e51'],legend=[],bars=false,startLabel='00:00',endLabel='02:00'}){
+export function chart({title,unit,series,t,duration,subtitle='',colors=['#528f87','#c28e51'],legend=[],bars=false,currentValue=undefined,startLabel='00:00',endLabel='02:00'}){
  const values=series.flatMap(s=>s.filter(v=>v.value!=null&&Number.isFinite(v.value)).map(v=>v.value));let min=values.length?Math.min(...values):0,max=values.length?Math.max(...values):1;
  if(min>=0&&(bars||max-min>.3))min=0;if(max-min<.01){min-=.05;max+=.05}const pad=(max-min)*.08;max+=pad;if(min!==0)min-=pad;
  const W=330,H=94,L=33,R=8,T=8,B=17,w=W-L-R,h=H-T-B,x=v=>L+v/duration*w,y=v=>T+h-(v-min)/(max-min)*h;
@@ -13,7 +13,7 @@ export function chart({title,unit,series,t,duration,subtitle='',colors=['#528f87
   return area+path;
  }).join('');
  const cursor=`<rect x="${x(t)}" y="${T}" width="${Math.max(0,W-R-x(t))}" height="${h}" fill="#f7f9f1" opacity=".44"/><line x1="${x(t)}" y1="${T}" x2="${x(t)}" y2="${T+h}" stroke="#64876a" stroke-width=".8" stroke-dasharray="2 2"/>`;
- const dots=series.map((s,i)=>{const v=at(s,t);return v==null?'':`<circle cx="${x(t)}" cy="${y(v)}" r="2.5" fill="${colors[i%colors.length]}" stroke="#f7f9f1" stroke-width="1.5"/>`}).join('');
- const current=at(series[0],t);
- return `<div class="chart-head"><b>${title}</b><span class="chart-current mono">${fmt(current,unit==='m³'||unit==='ha'?1:2)}<small>${unit}</small></span></div><div class="chart-sub">${subtitle}</div><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${title}，点击曲线可定位时间">${axis}${paths}${cursor}${dots}<text x="${L}" y="${H-2}">${startLabel}</text><text x="${(L+W-R)/2}" y="${H-2}" text-anchor="middle">回放时间</text><text x="${W-R}" y="${H-2}" text-anchor="end">${endLabel}</text></svg><div class="chart-legend">${legend.map((l,i)=>`<span style="--c:${colors[i%colors.length]}">${l}</span>`).join('')}</div>`;
+ const dots=series.map((s,i)=>{const v=i===0&&currentValue!==undefined?currentValue:at(s,t);return v==null?'':`<circle cx="${x(t)}" cy="${y(v)}" r="2.5" fill="${colors[i%colors.length]}" stroke="#f7f9f1" stroke-width="1.5"/>`}).join('');
+ const current=currentValue!==undefined?currentValue:at(series[0],t);
+ return `<div class="chart-head"><b>${title}</b><span class="chart-current mono">${fmt(current,unit==='人'?0:unit==='m³'||unit==='ha'?1:2)}<small>${unit}</small></span></div><div class="chart-sub">${subtitle}</div><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${title}，点击曲线可定位时间">${axis}${paths}${cursor}${dots}<text x="${L}" y="${H-2}">${startLabel}</text><text x="${(L+W-R)/2}" y="${H-2}" text-anchor="middle">回放时间</text><text x="${W-R}" y="${H-2}" text-anchor="end">${endLabel}</text></svg><div class="chart-legend">${legend.map((l,i)=>`<span style="--c:${colors[i%colors.length]}">${l}</span>`).join('')}</div>`;
 }

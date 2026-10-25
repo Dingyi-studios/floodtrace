@@ -1,0 +1,54 @@
+{
+  "checked_on": "2026-10-25",
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "trajectory interpolation and exact status boundaries",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "compound mass, capacity, deterministic rewind, movement and patrol duty states",
+      "pass": true,
+      "details": {
+        "groups": 18,
+        "people": 360,
+        "maximumPeopleMoving": 80,
+        "groupStates": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "patrolStates": [
+          1,
+          2,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "name": "historical mass, capacity, deterministic rewind, movement and patrol duty states",
+      "pass": true,
+      "details": {
+        "groups": 18,
+        "people": 360,
+        "maximumPeopleMoving": 140,
+        "groupStates": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "patrolStates": [
+          1,
+          2,
+          4,
+          3
+        ]
+      }
+    }
+  ]
+}

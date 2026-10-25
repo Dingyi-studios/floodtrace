@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import {sampleGrid,advectRK2} from './flow-core.js';
 
-export async function loadUrbanModel(){
- const meta=await fetch('/data/urban.json').then(r=>{if(!r.ok)throw Error('城市洪水结果尚未就绪');return r.json()});
+export async function loadUrbanModel(url='/data/compound.json'){
+ const meta=await fetch(url).then(r=>{if(!r.ok)throw Error('城市洪水结果尚未就绪');return r.json()});
  const [field,ground,mask]=await Promise.all([meta.grid.fields_url,meta.grid.ground_url,meta.grid.building_mask_url].map(u=>fetch(u).then(r=>{if(!r.ok)throw Error('洪水资源加载失败 '+u);return r.arrayBuffer()})));
  const n=meta.grid.count,frames=meta.grid.frames;
  if(field.byteLength!==n*frames*4*4)throw Error('洪水结果帧大小校验失败');
@@ -31,6 +31,11 @@ export class FlowField{
  sample(x,z){return sampleGrid(this.data,this.grid.cols,this.grid.rows,this.width,this.height,x-this.x0,z-this.z0,this.meta.buildingMask)}
  sampleFrame(x,z,f){return sampleGrid(this.meta.fields.subarray(f*this.n*4,(f+1)*this.n*4),this.grid.cols,this.grid.rows,this.width,this.height,x-this.x0,z-this.z0,this.meta.buildingMask)}
  series(x,z){if(this.nearest(x,z)<0)return[];return Array.from({length:this.grid.frames},(_,f)=>({t:f*this.meta.step,value:this.sampleFrame(x,z,f).depth}))}
+ useModel(meta){
+  if(meta.grid.count!==this.n||meta.grid.cols!==this.grid.cols||meta.bounds.some((v,i)=>v!==this.meta.bounds[i]))throw Error('情景网格不匹配');
+  this.meta=meta;this.grid=meta.grid;this.groundTexture.image.data=meta.ground;this.maskTexture.image.data=meta.buildingMask;
+  this.groundTexture.needsUpdate=true;this.maskTexture.needsUpdate=true;this.setTime(0);
+ }
 }
 
 const WATER_VERTEX=`
@@ -48,6 +53,7 @@ const WATER_FRAGMENT=`
  uniform vec2 uGridSize;
  uniform float uVisualTime;
  uniform float uOpacity;
+ uniform float uDepthScale;
  varying vec2 vUv;
  varying vec3 vWorld;
  void main(){
@@ -60,7 +66,7 @@ const WATER_FRAGMENT=`
   vec3 n=normalize(vec3(a*.045,1.,b*.045));
   vec3 eye=normalize(cameraPosition-vWorld);float fresnel=pow(1.-max(dot(eye,n),0.),4.);
   vec3 shallow=vec3(.075,.35,.39),deep=vec3(.012,.105,.19);
-  vec3 colour=mix(shallow,deep,1.-exp(-d*.25));
+  vec3 colour=mix(shallow,deep,1.-exp(-d*uDepthScale));
   vec3 reflected=mix(vec3(.22,.39,.48),vec3(.69,.80,.84),clamp(reflect(-eye,n).y,0.,1.));
   colour=mix(colour,reflected,.14+fresnel*.48);
   vec3 sun=normalize(vec3(-.45,.8,-.25));
@@ -114,7 +120,7 @@ export class FloodWater{
   for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){pos.push(field.x0+c/(cols-1)*field.width,0,field.z0+r/(rows-1)*field.height);uv.push(c/(cols-1),r/(rows-1))}
   for(let r=0;r<rows-1;r++)for(let c=0;c<cols-1;c++){const i=r*cols+c;indices.push(i,i+cols,i+1,i+1,i+cols,i+cols+1)}
   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);
-  this.uniforms={uField:{value:field.texture},uGridSize:{value:new THREE.Vector2(cols,rows)},uVisualTime:{value:0},uOpacity:{value:1}};
+  this.uniforms={uField:{value:field.texture},uGridSize:{value:new THREE.Vector2(cols,rows)},uVisualTime:{value:0},uOpacity:{value:1},uDepthScale:{value:field.meta.kind.includes('historical')?2.5:.25}};
   const m=new THREE.ShaderMaterial({vertexShader:WATER_VERTEX,fragmentShader:WATER_FRAGMENT,uniforms:this.uniforms,transparent:true,depthWrite:true,side:THREE.DoubleSide});
   this.mesh=new THREE.Mesh(g,m);this.mesh.frustumCulled=false;this.mesh.renderOrder=3;this.group.add(this.mesh);world.add(this.group,this.flow,this.vectors);
   this.createTracers();this.createArrows();this.resetParticles();

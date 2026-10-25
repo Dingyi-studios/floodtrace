@@ -1,0 +1,154 @@
+{
+  "checked_on": "2026-10-25",
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "separate rain gauges with unique ordered minutes",
+      "pass": true,
+      "details": {
+        "rg5425": 19.40046,
+        "rg5427": 23.600640000000002
+      }
+    },
+    {
+      "name": "compound finite water fields and binary layout",
+      "pass": true,
+      "details": {
+        "frames": 61,
+        "native_cells": 102400,
+        "bytes": 39431376
+      }
+    },
+    {
+      "name": "compound exact integrated rainfall volume",
+      "pass": true,
+      "details": {
+        "mm": 36.458333333333336,
+        "computed_m3": 93333.33333333326,
+        "expected_m3": 93333.33333333334
+      }
+    },
+    {
+      "name": "compound open-boundary and rainfall water balance",
+      "pass": true,
+      "details": {
+        "max_balance_error_m3": 7.357739377766848e-07
+      }
+    },
+    {
+      "name": "compound water level registration and velocity masks",
+      "pass": true,
+      "details": {
+        "max_stage_depth_error_m": 3.814697265625e-06
+      }
+    },
+    {
+      "name": "compound risk coverage and classes",
+      "pass": true,
+      "details": {
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bytes": 1210000
+      }
+    },
+    {
+      "name": "compound green zones obey full forecast depth/speed and outdoor mask",
+      "pass": true,
+      "details": {
+        "green_cells_checked": 8701,
+        "violations": 0,
+        "forecast_s": 1800,
+        "bin_buffer_s": 60
+      }
+    },
+    {
+      "name": "compound moving leaders and patrols respect sampled dry-route rules",
+      "pass": true,
+      "details": {
+        "leader_samples": 2028,
+        "max_leader_depth_m": 0.17308543995022777,
+        "max_patrol_depth_m": 0.05091940421843902,
+        "display_interpolation_tolerance_m": 0.03
+      }
+    },
+    {
+      "name": "historical finite water fields and binary layout",
+      "pass": true,
+      "details": {
+        "frames": 73,
+        "native_cells": 40000,
+        "bytes": 47188368
+      }
+    },
+    {
+      "name": "historical exact integrated rainfall volume",
+      "pass": true,
+      "details": {
+        "mm": 19.40046000000008,
+        "computed_m3": 49665.17760000068,
+        "expected_m3": 49665.17760000021
+      }
+    },
+    {
+      "name": "historical open-boundary and rainfall water balance",
+      "pass": true,
+      "details": {
+        "max_balance_error_m3": 4.975736374035478e-07
+      }
+    },
+    {
+      "name": "historical water level registration and velocity masks",
+      "pass": true,
+      "details": {
+        "max_stage_depth_error_m": 3.814697265625e-06
+      }
+    },
+    {
+      "name": "historical risk coverage and classes",
+      "pass": true,
+      "details": {
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bytes": 3610000
+      }
+    },
+    {
+      "name": "historical green zones obey full forecast depth/speed and outdoor mask",
+      "pass": true,
+      "details": {
+        "green_cells_checked": 19928,
+        "violations": 0,
+        "forecast_s": 1800,
+        "bin_buffer_s": 60
+      }
+    },
+    {
+      "name": "historical moving leaders and patrols respect sampled dry-route rules",
+      "pass": true,
+      "details": {
+        "leader_samples": 2446,
+        "max_leader_depth_m": 0.17653973534250011,
+        "max_patrol_depth_m": 0.0256020370887313,
+        "display_interpolation_tolerance_m": 0.03
+      }
+    },
+    {
+      "name": "historical source rain creates visible modeled ponding",
+      "pass": true,
+      "details": {
+        "native_max_new_depth_m": 1.161,
+        "native_max_new_area_m2": 128640.0,
+        "not_historical_inundation_observation": true
+      }
+    }
+  ]
+}

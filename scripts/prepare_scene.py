@@ -1,6 +1,6 @@
 """Create compact, georeferenced browser assets. Never edit upstream data."""
 from pathlib import Path
-import json, math, hashlib
+import json, math, hashlib, os
 import numpy as np
 import rasterio
 from rasterio.enums import Resampling
@@ -13,7 +13,7 @@ from scipy.interpolate import RegularGridInterpolator
 from PIL import Image, ImageDraw, ImageFilter
 
 ROOT=Path(__file__).resolve().parents[1]
-SRC=Path('/Volumes/T5/个人项目数据库/洪涝模拟数据')
+SRC=Path(os.environ.get('FLOODTRACE_DATA_ROOT','/Volumes/T5/个人项目数据库/洪涝模拟数据'))
 DATA=SRC/'prepared/bellinge'
 OUT=ROOT/'app/public/data'
 OUT.mkdir(parents=True,exist_ok=True)

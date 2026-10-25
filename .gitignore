@@ -54,3 +54,10 @@ validation/v2/*
 !validation/v2/data-checks.json
 !validation/v2/tracer-checks.json
 !validation/v2/browser-checks.json
+
+# Current release verification records
+!validation/v3/
+validation/v3/*
+!validation/v3/data-checks.json
+!validation/v3/operations-checks.json
+!validation/v3/browser-checks.json

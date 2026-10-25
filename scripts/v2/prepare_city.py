@@ -1,6 +1,6 @@
 """V2: exact display sampling, schematic architectural details, native terrain."""
 from pathlib import Path
-import json,math
+import json,math,os
 import numpy as np
 import rasterio
 from rasterio.merge import merge
@@ -13,7 +13,7 @@ from PIL import Image,ImageEnhance
 
 ROOT=Path(__file__).resolve().parents[2]
 P=ROOT/'app/public/data';D=ROOT/'derived/v2';D.mkdir(parents=True,exist_ok=True)
-SRC=Path('/Volumes/T5/个人项目数据库/洪涝模拟数据')
+SRC=Path(os.environ.get('FLOODTRACE_DATA_ROOT','/Volumes/T5/个人项目数据库/洪涝模拟数据'))
 scene=json.loads((P/'scene.json').read_text())
 domain=(583000,6132100,584600,6133700)
 scene['domain']=domain

@@ -1,0 +1,371 @@
+{
+  "checked_on": "2026-10-25T14:23:06.522Z",
+  "checks": [
+    {
+      "name": "pause freezes time, water, accumulated rain, people, patrols and instance transforms while visual phase continues",
+      "pass": true,
+      "details": {
+        "time": 3757.0185000000934,
+        "counts": {
+          "waiting": 0,
+          "moving": 0,
+          "arrived": 180,
+          "blocked": 180
+        },
+        "waterChecksum": 19356627.82392186,
+        "visualPhaseBefore": 258.5940999998986,
+        "visualPhaseAfter": 259.612599999899
+      }
+    },
+    {
+      "name": "slow playback moves crowd on its track and camera follow remains active",
+      "pass": true,
+      "details": {
+        "id": "E04",
+        "startTime": 2400,
+        "endTime": 2420.751000000002,
+        "performance": {
+          "fps": 59.99999999999999,
+          "frames": 60
+        }
+      }
+    },
+    {
+      "name": "walking patrol team advances on its timed track; guidance dwell phases stay in place",
+      "pass": true,
+      "details": {
+        "selected": "T02",
+        "before": {
+          "xy": [
+            343.4653271677114,
+            -333.3487591099703
+          ],
+          "status": 4,
+          "target": 1,
+          "heading": 2.4650608823351217,
+          "moving": true,
+          "id": "T02",
+          "count": 2
+        },
+        "after": {
+          "xy": [
+            347.2,
+            -338
+          ],
+          "status": 3,
+          "target": 1,
+          "heading": 0,
+          "moving": false,
+          "id": "T02",
+          "count": 2
+        },
+        "note": "T01 was in a guidance dwell state; walking T02 is used for the motion assertion"
+      }
+    },
+    {
+      "name": "risk, public groups and patrol layers are independent",
+      "pass": true,
+      "details": {
+        "risk": false,
+        "people": false,
+        "patrol": true,
+        "personY": -100,
+        "patrolY": 31.086549758911133
+      }
+    },
+    {
+      "name": "guidance example locates an actual modeled encounter and its log",
+      "pass": true,
+      "details": {
+        "time": 1730,
+        "selected": "E03",
+        "counts": {
+          "waiting": 200,
+          "moving": 80,
+          "arrived": 60,
+          "blocked": 20
+        }
+      }
+    },
+    {
+      "name": "production V3 loads compound rainfall field and all operational data",
+      "pass": true,
+      "details": {
+        "model": "BELL-RAINFALL-COMPOUND-03",
+        "rain": {
+          "inputMmH": 50.83333333333333,
+          "cumulativeMm": 19.402777777777775,
+          "gauge": "hypothetical",
+          "visual": {
+            "rainMmH": 50.83333333333333,
+            "drawCount": 425,
+            "maximum": 900,
+            "opacity": 0.2759371241438452,
+            "visualOnly": true
+          }
+        },
+        "counts": {
+          "waiting": 100,
+          "moving": 60,
+          "arrived": 120,
+          "blocked": 80
+        }
+      }
+    },
+    {
+      "name": "2D and 3D retain physical time, selected crowd and headcounts",
+      "pass": true,
+      "details": {
+        "time": 1730,
+        "selected": "E03",
+        "counts": {
+          "waiting": 200,
+          "moving": 80,
+          "arrived": 60,
+          "blocked": 20
+        }
+      }
+    },
+    {
+      "name": "historical rain peak uses rg5425 and bounded visual rain density",
+      "pass": true,
+      "details": {
+        "inputMmH": 107.99999999999999,
+        "cumulativeMm": 6.601319999999998,
+        "gauge": "rg5425",
+        "visual": {
+          "rainMmH": 107.99999999999999,
+          "drawCount": 487,
+          "maximum": 900,
+          "opacity": 0.29733033690392824,
+          "visualOnly": true
+        }
+      }
+    },
+    {
+      "name": "historical surface trial shows actual computed ponding and rewinds to dry at P04",
+      "pass": true,
+      "details": {
+        "initialDepth": 0,
+        "endDepth": 1.2098487210273838,
+        "totalRain": 19.40046000000008,
+        "model": "BELL-RAINFALL-HISTORICAL-03"
+      }
+    },
+    {
+      "name": "rain density increases with intensity, remains bounded and can be hidden independently",
+      "pass": true,
+      "details": {
+        "high": {
+          "inputMmH": 107.99999999999999,
+          "cumulativeMm": 6.601319999999998,
+          "gauge": "rg5425",
+          "visual": {
+            "rainMmH": 107.99999999999999,
+            "drawCount": 487,
+            "maximum": 900,
+            "opacity": 0.29733033690392824,
+            "visualOnly": true
+          }
+        },
+        "low": {
+          "inputMmH": 2.9987999999999997,
+          "cumulativeMm": 17.00130000000002,
+          "gauge": "rg5425",
+          "visual": {
+            "rainMmH": 2.9987999999999997,
+            "drawCount": 54,
+            "maximum": 900,
+            "opacity": 0.14851903469392566,
+            "visualOnly": true
+          }
+        },
+        "hidden": false
+      }
+    },
+    {
+      "name": "historical surface and inundation tint can be toggled together",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "wetTint": 0
+      }
+    },
+    {
+      "name": "historical monitoring retains separate rain stations, observations and independent SWMM",
+      "pass": true,
+      "details": {
+        "selected": "G71F04R",
+        "stations": [
+          "rg5425",
+          "rg5427"
+        ]
+      }
+    },
+    {
+      "name": "actual historical snapshot export identifies simulated surface depth, station and model version",
+      "pass": true,
+      "details": {
+        "version": "v0.3.0",
+        "model": "BELL-RAINFALL-HISTORICAL-03",
+        "unit": "m simulated surface depth",
+        "gauge": "rg5425"
+      }
+    },
+    {
+      "name": "rewinding historical evacuation resets every public group and assembly occupancy",
+      "pass": true,
+      "details": {
+        "counts": {
+          "waiting": 360,
+          "moving": 0,
+          "arrived": 0,
+          "blocked": 0
+        },
+        "occupancy": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "historical scenario has its own moving groups and capacity-safe assemblies",
+      "pass": true,
+      "details": {
+        "time": 6600,
+        "counts": {
+          "waiting": 0,
+          "moving": 60,
+          "arrived": 200,
+          "blocked": 100
+        },
+        "occupied": [
+          100,
+          0,
+          100
+        ],
+        "reserved": [
+          40,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1280 desktop layout fits all four workspaces without horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 1280,
+        "documentWidth": 1280,
+        "buttons": [
+          {
+            "x": 749,
+            "right": 832,
+            "y": 0,
+            "bottom": 63
+          },
+          {
+            "x": 842,
+            "right": 925,
+            "y": 0,
+            "bottom": 63
+          },
+          {
+            "x": 935,
+            "right": 1018,
+            "y": 0,
+            "bottom": 63
+          },
+          {
+            "x": 1028,
+            "right": 1122,
+            "y": 0,
+            "bottom": 63
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound rain preserves floor inundation and roof-only showcase",
+      "pass": true,
+      "details": {
+        "depth": 7.538401100235184,
+        "building": {
+          "depth": 7.538401100235184,
+          "stage": 23.595401100235183,
+          "floors": 2,
+          "status": "仅屋顶露出",
+          "roofLevel": 24.326999999999998
+        },
+        "rain": 31.499999999999996
+      }
+    },
+    {
+      "name": "original response workspace uses recomputed compound-water result",
+      "pass": true,
+      "details": {
+        "version": "BELL-RAINFALL-COMPOUND-03",
+        "status": "驻点受淹"
+      }
+    },
+    {
+      "name": "direct rendered person click resolves to the correct crowd group",
+      "pass": true,
+      "details": {
+        "target": {
+          "id": "E01",
+          "x": 786.5096737145634,
+          "y": 271.06836473485174
+        },
+        "selected": "E01"
+      }
+    },
+    {
+      "name": "bounded final interaction has no runtime exceptions or failed network requests",
+      "pass": true,
+      "details": {
+        "audit": {
+          "cursor": 22380,
+          "events": [],
+          "hasMore": false,
+          "truncated": false
+        },
+        "scope": "post-load 2D switch; full binary loading is checked by production HTTP checks because the full CDP stream exceeded its ring buffer"
+      }
+    },
+    {
+      "name": "final production console has no errors or warnings",
+      "pass": true,
+      "details": {
+        "entries": []
+      }
+    },
+    {
+      "name": "native narrow panel has responsive vertical layout without horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 540,
+        "height": 768,
+        "documentWidth": 525,
+        "documentHeight": 1466
+      }
+    }
+  ],
+  "performance": {
+    "fps": 59.9940005999414,
+    "frames": 60,
+    "maxFrameMs": 18.400000000023283,
+    "meanFrameMs": 16.668333333332946
+  },
+  "productionStartedAt": "2026-10-25T14:55:51.359Z",
+  "productionPerformance": {
+    "fps": 59.99999999999999,
+    "frames": 60,
+    "maxFrameMs": 18.5
+  },
+  "finalAuditStartedAt": "2026-10-25T15:05:38.707Z",
+  "finishedAt": "2026-10-25T15:22:15.794Z",
+  "passed": 22,
+  "failed": 0
+}

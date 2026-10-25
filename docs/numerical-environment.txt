@@ -1,0 +1,11 @@
+# Recorded versions from the author’s ARM64 numerical environment; native dependencies may need platform setup.
+anuga==4.1.0
+swmm-toolkit==0.17.0
+numpy==2.5.4
+scipy==1.18.1
+rasterio==1.5.2
+shapely==2.2.0
+networkx==3.7
+pandas==2.2.3
+Pillow==13.0.0
+matplotlib==3.11.2
