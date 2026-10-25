@@ -1,0 +1,913 @@
+{
+  "checked_on": "2026-10-25T11:53:26.674Z",
+  "checks": [
+    {
+      "name": "pause freezes physical time, field, readings and resource while visual tracers continue",
+      "pass": true,
+      "details": {
+        "before": {
+          "time": 3600,
+          "value": 7.534615754211565,
+          "field": [
+            30.03814697265625,
+            0,
+            0,
+            0,
+            29.718473434448242,
+            0,
+            0,
+            0,
+            29.685977935791016,
+            0,
+            0,
+            0,
+            29.73752784729004,
+            0,
+            0,
+            0
+          ],
+          "resource": [
+            -106.8,
+            20.897875289545627,
+            582.8
+          ],
+          "p": [
+            410.2279968261719,
+            23.55433464050293,
+            807.893310546875,
+            384.0793762207031,
+            23.51592445373535,
+            865.7893676757812,
+            521.5070190429688,
+            23.422574996948242,
+            644.2893676757812,
+            439.5262451171875,
+            23.550060272216797,
+            806.0149536132812
+          ],
+          "phase": 66.13450000000084
+        },
+        "after": {
+          "time": 3600,
+          "value": 7.534615754211565,
+          "field": [
+            30.03814697265625,
+            0,
+            0,
+            0,
+            29.718473434448242,
+            0,
+            0,
+            0,
+            29.685977935791016,
+            0,
+            0,
+            0,
+            29.73752784729004,
+            0,
+            0,
+            0
+          ],
+          "resource": [
+            -106.8,
+            20.897875289545627,
+            582.8
+          ],
+          "p": [
+            409.78271484375,
+            23.55448341369629,
+            806.5153198242188,
+            382.93316650390625,
+            23.515092849731445,
+            866.528076171875,
+            519.4421997070312,
+            23.272247314453125,
+            639.8799438476562,
+            441.3398742675781,
+            23.545804977416992,
+            798.9118041992188
+          ],
+          "phase": 67.16739999985758
+        }
+      }
+    },
+    {
+      "name": "phase buttons preserve selected building and camera while inundation changes",
+      "pass": true,
+      "details": {
+        "early": {
+          "time": 1200,
+          "selected": "B2194",
+          "scenario": "surface",
+          "mode": "3D",
+          "workspace": "incident",
+          "value": 0,
+          "waterCellCount": 102400,
+          "gridSamples": 40401,
+          "tracers": {
+            "active": 595,
+            "requested": 1700,
+            "drawCount": 595,
+            "viewDensityScale": 0.35,
+            "eligibleCells": 5260,
+            "minDepth": 0.12665754332034568,
+            "aligned": 595,
+            "moving": 595,
+            "visualPhaseSeconds": 84.30289999985523,
+            "visualTimeScale": 8,
+            "physicalTime": 1200
+          },
+          "building": {
+            "depth": 0,
+            "stage": 14.944090827694692,
+            "floors": 0,
+            "status": "尚未进水",
+            "roofLevel": 24.326999999999998
+          },
+          "render": {
+            "frame": 5055,
+            "calls": 33,
+            "triangles": 655426,
+            "points": 595,
+            "lines": 11806
+          }
+        },
+        "deep": {
+          "time": 3600,
+          "selected": "B2194",
+          "scenario": "surface",
+          "mode": "3D",
+          "workspace": "incident",
+          "value": 7.534615754211565,
+          "waterCellCount": 102400,
+          "gridSamples": 40401,
+          "tracers": {
+            "active": 595,
+            "requested": 1700,
+            "drawCount": 595,
+            "viewDensityScale": 0.35,
+            "eligibleCells": 17468,
+            "minDepth": 0.25144512483786524,
+            "aligned": 595,
+            "moving": 595,
+            "visualPhaseSeconds": 85.13620000004587,
+            "visualTimeScale": 8,
+            "physicalTime": 3600
+          },
+          "building": {
+            "depth": 7.534615754211565,
+            "stage": 23.591615754211563,
+            "floors": 2,
+            "status": "仅屋顶露出",
+            "roofLevel": 24.326999999999998
+          },
+          "render": {
+            "frame": 5105,
+            "calls": 33,
+            "triangles": 655426,
+            "points": 595,
+            "lines": 11806
+          }
+        }
+      }
+    },
+    {
+      "name": "2D/3D preserves physical time, selected building and water depth",
+      "pass": true,
+      "details": {
+        "time": 3600,
+        "selected": "B2194",
+        "scenario": "surface",
+        "mode": "2D",
+        "workspace": "incident",
+        "value": 7.534615754211565,
+        "waterCellCount": 102400,
+        "gridSamples": 40401,
+        "tracers": {
+          "active": 1700,
+          "requested": 1700,
+          "drawCount": 1700,
+          "viewDensityScale": 1,
+          "eligibleCells": 17468,
+          "minDepth": 0.23958658009179115,
+          "aligned": 1700,
+          "moving": 1700,
+          "visualPhaseSeconds": 85.55279999995042,
+          "visualTimeScale": 8,
+          "physicalTime": 3600
+        },
+        "building": {
+          "depth": 7.534615754211565,
+          "stage": 23.591615754211563,
+          "floors": 2,
+          "status": "仅屋顶露出",
+          "roofLevel": 24.326999999999998
+        },
+        "render": {
+          "frame": 5130,
+          "calls": 26,
+          "triangles": 654940,
+          "points": 1700,
+          "lines": 20646
+        }
+      }
+    },
+    {
+      "name": "water, particles, velocity arrows independently toggle; water hides inundation tint",
+      "pass": true,
+      "details": {
+        "flow_arrows": {
+          "flow": false,
+          "vectors": true
+        },
+        "water": {
+          "water": false,
+          "wetShader": 0
+        }
+      }
+    },
+    {
+      "name": "density budget and near-view scaling",
+      "pass": true,
+      "details": {
+        "sparse": {
+          "active": 140,
+          "requested": 400,
+          "drawCount": 140,
+          "viewDensityScale": 0.35,
+          "eligibleCells": 17468,
+          "minDepth": 0.206447277504419,
+          "aligned": 140,
+          "moving": 140,
+          "visualPhaseSeconds": 107.13470000004303,
+          "visualTimeScale": 8,
+          "physicalTime": 3600
+        },
+        "dense": {
+          "active": 840,
+          "requested": 2400,
+          "drawCount": 840,
+          "viewDensityScale": 0.35,
+          "eligibleCells": 17468,
+          "minDepth": 0.16826591946062108,
+          "aligned": 840,
+          "moving": 840,
+          "visualPhaseSeconds": 107.25320000004302,
+          "visualTimeScale": 8,
+          "physicalTime": 3600
+        }
+      }
+    },
+    {
+      "name": "retreat shortcut returns showcase building to dry",
+      "pass": true,
+      "details": {
+        "time": 6600,
+        "selected": "B2194",
+        "scenario": "surface",
+        "mode": "3D",
+        "workspace": "incident",
+        "value": 0,
+        "waterCellCount": 102400,
+        "gridSamples": 40401,
+        "tracers": {
+          "active": 595,
+          "requested": 1700,
+          "drawCount": 595,
+          "viewDensityScale": 0.35,
+          "eligibleCells": 6371,
+          "minDepth": 0.18572317493800972,
+          "aligned": 595,
+          "moving": 595,
+          "visualPhaseSeconds": 108.16989999985222,
+          "visualTimeScale": 8,
+          "physicalTime": 6600
+        },
+        "building": {
+          "depth": 0,
+          "stage": 15.610641337809227,
+          "floors": 0,
+          "status": "尚未进水",
+          "roofLevel": 24.326999999999998
+        },
+        "render": {
+          "frame": 6487,
+          "calls": 33,
+          "triangles": 655426,
+          "points": 595,
+          "lines": 11806
+        }
+      }
+    },
+    {
+      "name": "direct roof geometry click selects source building and corresponding inspector",
+      "pass": true,
+      "details": {
+        "selected": "B1990",
+        "sourceId": "1071749098",
+        "click": [
+          700,
+          371
+        ]
+      }
+    },
+    {
+      "name": "play advances all time state and pause button returns to stopped state",
+      "pass": true,
+      "details": {
+        "started": 2423.886000000002,
+        "paused": 2426.994000000001
+      }
+    },
+    {
+      "name": "historical observations and independent SWMM retained; hypothetical flood fully hidden",
+      "pass": true,
+      "details": {
+        "snapshot": {
+          "time": 5400,
+          "selected": "G71F04R",
+          "scenario": "history",
+          "mode": "3D",
+          "workspace": "monitor",
+          "value": 12.7405,
+          "waterCellCount": 102400,
+          "gridSamples": 40401,
+          "tracers": {
+            "active": 595,
+            "requested": 1700,
+            "drawCount": 595,
+            "viewDensityScale": 0.35,
+            "eligibleCells": 10371,
+            "minDepth": 0.16666818963446167,
+            "aligned": 595,
+            "moving": 595,
+            "visualPhaseSeconds": 236.13879999994708,
+            "visualTimeScale": 8,
+            "physicalTime": 2426.994000000001
+          },
+          "building": null,
+          "render": {
+            "frame": 15680,
+            "calls": 30,
+            "triangles": 575426,
+            "points": 0,
+            "lines": 7046
+          }
+        },
+        "layers": {
+          "water": false,
+          "flow": false,
+          "wetShader": 0
+        },
+        "endTime": 21600
+      }
+    },
+    {
+      "name": "response workspace uses new flood result, floods station, and rewinds resource",
+      "pass": true,
+      "details": {
+        "peakStatus": "驻点受淹",
+        "rewoundTime": 0,
+        "startPanel": "HYPOTHETICAL OPERATIONS\n\t\t\t\t418 heading 先确认路径，再进入现场。, Value: 2\n\t\t\t\t\t419 text 先确认路径，再进入现场。\n\t\t\t\t420 text 全部为假设资源 源道路中心线上生成候选巡查路线，按时序水深执行 0.30 m 停止规则。 任务状态\n\t\t\t\t421 text 待出发\n\t\t\t\t422 text 行驶里程\n\t\t\t\t423 text 0.00\n\t\t\t\t424 text km\n\t\t\t425 container\n\t\t\t\t426 heading 情景资源, Value: 2\n\t\t\t\t\t427 text 情景资源\n\t\t\t\t428 text 3 个对象\n\t\t\t\t429 button R01 巡查组 · R-01 ›\n\t\t\t\t\t430 image\n\t\t\t\t\t431 text R01\n\t\t\t\t\t432 text 巡查组 · R-01\n\t\t\t\t\t433 text ›\n\t\t\t\t434 button C01 道路检查点 · C-01 ›\n\t\t\t\t\t435 image\n\t\t\t\t\t436 text C01\n\t\t\t\t\t437 text 道路检查点 · C-01\n\t\t\t\t\t438 text ›\n\t\t\t\t439 button S01 假设集结点 · S-01 ›\n\t\t\t\t\t440 image\n\t\t\t\t\t441 text S01\n\t\t\t\t\t442 text 假设集结点 · S-01\n\t\t\t\t\t443 text ›\n\t\t\t444 container\n\t\t\t\t445 heading 情景行动日志, Value: 2\n\t\t\t\t\t446 text 情景行动日志\n\t\t\t\t447 text 1 条\n\t\t\t\t448 button 假设资源就绪 · 新外洪情景 00:00\n\t\t\t\t\t449 text 假设资源就绪 · 新外洪情景\n\t\t\t\t\t450 text 00:00\n\t\t201 container\n\t\t\t202 heading ",
+        "method": "full accessibility snapshot, not incremental diff"
+      }
+    },
+    {
+      "name": "actual snapshot download includes V2 assumptions and current selection/time",
+      "pass": true,
+      "details": {
+        "product": "FloodTrace MVP",
+        "exportedAt": "2026-10-25T11:58:09.885Z",
+        "scenario": "surface",
+        "workspace": "incident",
+        "time": 3600,
+        "timeText": "T + 01:00:00",
+        "selected": {
+          "id": "B2194",
+          "name": "2 层 · 坡屋顶",
+          "xy": [
+            583.93,
+            903.36
+          ],
+          "ground": 16.057,
+          "kind": "building",
+          "sourceIndex": 2194,
+          "sourceId": "1071720061",
+          "floors": 2,
+          "height": 6.2,
+          "roofRise": 2.07,
+          "depthSeries": [
+            {
+              "t": 0,
+              "value": 0
+            },
+            {
+              "t": 120,
+              "value": 0
+            },
+            {
+              "t": 240,
+              "value": 0
+            },
+            {
+              "t": 360,
+              "value": 0
+            },
+            {
+              "t": 480,
+              "value": 0
+            },
+            {
+              "t": 600,
+              "value": 0
+            },
+            {
+              "t": 720,
+              "value": 0
+            },
+            {
+              "t": 840,
+              "value": 0
+            },
+            {
+              "t": 960,
+              "value": 0
+            },
+            {
+              "t": 1080,
+              "value": 0
+            },
+            {
+              "t": 1200,
+              "value": 0
+            },
+            {
+              "t": 1320,
+              "value": 0
+            },
+            {
+              "t": 1440,
+              "value": 0
+            },
+            {
+              "t": 1560,
+              "value": 0.24355758383542536
+            },
+            {
+              "t": 1680,
+              "value": 0.7204286311133536
+            },
+            {
+              "t": 1800,
+              "value": 0.8455988613054046
+            },
+            {
+              "t": 1920,
+              "value": 1.1863070422971091
+            },
+            {
+              "t": 2040,
+              "value": 1.7193826229120575
+            },
+            {
+              "t": 2160,
+              "value": 2.1660171390573097
+            },
+            {
+              "t": 2280,
+              "value": 2.6380419251436287
+            },
+            {
+              "t": 2400,
+              "value": 3.0170111344275163
+            },
+            {
+              "t": 2520,
+              "value": 3.438835240091258
+            },
+            {
+              "t": 2640,
+              "value": 3.9136699628659954
+            },
+            {
+              "t": 2760,
+              "value": 4.395169960093842
+            },
+            {
+              "t": 2880,
+              "value": 4.831379794355808
+            },
+            {
+              "t": 3000,
+              "value": 5.280906291313787
+            },
+            {
+              "t": 3120,
+              "value": 5.7321752303673
+            },
+            {
+              "t": 3240,
+              "value": 6.1935378433209785
+            },
+            {
+              "t": 3360,
+              "value": 6.642188615624221
+            },
+            {
+              "t": 3480,
+              "value": 7.092667727083665
+            },
+            {
+              "t": 3600,
+              "value": 7.534615754211565
+            },
+            {
+              "t": 3720,
+              "value": 7.958209881520183
+            },
+            {
+              "t": 3840,
+              "value": 8.086565074072698
+            },
+            {
+              "t": 3960,
+              "value": 8.151754316590797
+            },
+            {
+              "t": 4080,
+              "value": 8.195326419505097
+            },
+            {
+              "t": 4200,
+              "value": 8.21179213501878
+            },
+            {
+              "t": 4320,
+              "value": 8.190539215161081
+            },
+            {
+              "t": 4440,
+              "value": 7.832351184999755
+            },
+            {
+              "t": 4560,
+              "value": 7.373608401235071
+            },
+            {
+              "t": 4680,
+              "value": 6.88723050564985
+            },
+            {
+              "t": 4800,
+              "value": 6.351570920948088
+            },
+            {
+              "t": 4920,
+              "value": 5.807842165442196
+            },
+            {
+              "t": 5040,
+              "value": 5.270433149892867
+            },
+            {
+              "t": 5160,
+              "value": 4.7242180714749615
+            },
+            {
+              "t": 5280,
+              "value": 4.175239666632287
+            },
+            {
+              "t": 5400,
+              "value": 3.580346012612715
+            },
+            {
+              "t": 5520,
+              "value": 3.039886312994284
+            },
+            {
+              "t": 5640,
+              "value": 2.5696421077887663
+            },
+            {
+              "t": 5760,
+              "value": 2.0591371192628216
+            },
+            {
+              "t": 5880,
+              "value": 1.4633739572116298
+            },
+            {
+              "t": 6000,
+              "value": 0.9285807123158101
+            },
+            {
+              "t": 6120,
+              "value": 0.7227967662329462
+            },
+            {
+              "t": 6240,
+              "value": 0.28817196826572555
+            },
+            {
+              "t": 6360,
+              "value": 0
+            },
+            {
+              "t": 6480,
+              "value": 0
+            },
+            {
+              "t": 6600,
+              "value": 0
+            },
+            {
+              "t": 6720,
+              "value": 0
+            },
+            {
+              "t": 6840,
+              "value": 0
+            },
+            {
+              "t": 6960,
+              "value": 0
+            },
+            {
+              "t": 7080,
+              "value": 0
+            },
+            {
+              "t": 7200,
+              "value": 0
+            }
+          ]
+        },
+        "layers": {
+          "terrain": true,
+          "buildings": true,
+          "roads": true,
+          "rivers": true,
+          "flood": true,
+          "flow": true,
+          "vectors": false,
+          "network": false,
+          "sensors": true,
+          "domain": false
+        },
+        "view": "3D",
+        "displayVerticalExaggeration": 1,
+        "resultVersion": "v0.2.0",
+        "value": 7.534615754211565,
+        "unit": "m surface depth",
+        "kind": "hypothetical-model",
+        "coupled": false,
+        "assumptions": {
+          "case": "hypothetical extreme river stage, not a historical disaster reconstruction",
+          "boundary": "west river crossing inlet stage / east river corridor outlet stage; remaining boundaries reflective",
+          "rainfall": "none",
+          "initial_stage_m_DVR90": 13.8,
+          "mesh_spacing_m": 10,
+          "hydraulic_terrain": "native 0.4 m -> 4 m averages -> 10 m cross mesh",
+          "friction_manning_n": 0.045,
+          "building_obstacles": "finite raised beds using schematic eaves+roof heights; openings and sub-grid lanes unresolved",
+          "infiltration": "none",
+          "drainage": "none; not coupled to SWMM",
+          "rendering": "local convex wet-neighbour stage interpolation on 8 m grid; hidden building interiors filled from adjacent wet cells; native stats are authoritative",
+          "particles": "instantaneous velocity-field tracers, not debris or real tracked objects",
+          "boundary_momentum": "zero prescribed momentum at the two external reservoir-stage boundaries",
+          "cfl": 0.7
+        },
+        "source": "https://doi.org/10.11583/DTU.c.5029124"
+      }
+    },
+    {
+      "name": "production build loads 102400 native cells and current continuous field",
+      "pass": true,
+      "details": {
+        "time": 3600,
+        "selected": "P02",
+        "scenario": "surface",
+        "mode": "3D",
+        "workspace": "incident",
+        "value": 8.518403830878437,
+        "waterCellCount": 102400,
+        "gridSamples": 40401,
+        "tracers": {
+          "active": 1700,
+          "requested": 1700,
+          "drawCount": 1700,
+          "viewDensityScale": 1,
+          "eligibleCells": 17468,
+          "minDepth": 0.12438466722302105,
+          "aligned": 1700,
+          "moving": 1700,
+          "visualPhaseSeconds": 180.87229999994045,
+          "visualTimeScale": 8,
+          "physicalTime": 3600
+        },
+        "building": null,
+        "render": {
+          "frame": 10848,
+          "calls": 104,
+          "triangles": 657246,
+          "points": 1700,
+          "lines": 20646
+        }
+      }
+    },
+    {
+      "name": "actual time-slider drag updates continuous water and partial floor inundation",
+      "pass": true,
+      "details": {
+        "time": 3195,
+        "selected": "B2194",
+        "scenario": "surface",
+        "mode": "3D",
+        "workspace": "incident",
+        "value": 6.020526863463349,
+        "waterCellCount": 102400,
+        "gridSamples": 40401,
+        "tracers": {
+          "active": 595,
+          "requested": 1700,
+          "drawCount": 595,
+          "viewDensityScale": 0.35,
+          "eligibleCells": 15123,
+          "minDepth": 0.21725976090722796,
+          "aligned": 595,
+          "moving": 595,
+          "visualPhaseSeconds": 195.73909999989283,
+          "visualTimeScale": 8,
+          "physicalTime": 3195
+        },
+        "building": {
+          "depth": 6.02052700858458,
+          "stage": 22.07752700858458,
+          "floors": 2,
+          "status": "2 层受淹",
+          "roofLevel": 24.326999999999998
+        },
+        "render": {
+          "frame": 11740,
+          "calls": 31,
+          "triangles": 655340,
+          "points": 595,
+          "lines": 11806
+        }
+      }
+    },
+    {
+      "name": "1280 by 800 desktop layout remains within viewport and view tools do not overlap zoom tools",
+      "pass": true,
+      "details": {
+        "width": 1280,
+        "overflow": false,
+        "viewButtons": [
+          {
+            "x": 671,
+            "y": 141,
+            "w": 54,
+            "h": 27
+          },
+          {
+            "x": 728,
+            "y": 141,
+            "w": 54,
+            "h": 27
+          },
+          {
+            "x": 785,
+            "y": 141,
+            "w": 54,
+            "h": 27
+          },
+          {
+            "x": 842,
+            "y": 141,
+            "w": 32,
+            "h": 27
+          }
+        ],
+        "zoom": {
+          "x": 900,
+          "y": 302,
+          "w": 36,
+          "h": 134
+        }
+      }
+    },
+    {
+      "name": "final production pause preserves full field checksum and resource; visual tracer advances",
+      "pass": true,
+      "details": {
+        "before": {
+          "time": 3600,
+          "waterChecksum": 19009019.385859616,
+          "reading": 7.534615754211565,
+          "resource": [
+            -106.8,
+            20.897875289545627,
+            582.8
+          ],
+          "visualPhase": 124.35640000008664,
+          "firstParticle": [
+            748.3941650390625,
+            23.35512351989746,
+            835.6453857421875
+          ]
+        },
+        "after": {
+          "time": 3600,
+          "waterChecksum": 19009019.385859616,
+          "reading": 7.534615754211565,
+          "resource": [
+            -106.8,
+            20.897875289545627,
+            582.8
+          ],
+          "visualPhase": 125.38910000013412,
+          "firstParticle": [
+            750.8970336914062,
+            23.359180450439453,
+            827.4713745117188
+          ]
+        },
+        "performance": {
+          "fps": 59.98200539838119,
+          "frames": 60,
+          "maxFrameMs": 17.69999999999709,
+          "meanFrameMs": 16.67166666666647
+        }
+      }
+    },
+    {
+      "name": "rendered production tracers align with actual velocities and avoid masked cells",
+      "pass": true,
+      "details": {
+        "bad": 0,
+        "min": 0.12284170509910525,
+        "stats": {
+          "active": 595,
+          "requested": 1700,
+          "drawCount": 595,
+          "viewDensityScale": 0.35,
+          "eligibleCells": 17468,
+          "minDepth": 0.12284179474649977,
+          "aligned": 595,
+          "moving": 595,
+          "visualPhaseSeconds": 125.40620000003875,
+          "visualTimeScale": 8,
+          "physicalTime": 3600
+        }
+      }
+    },
+    {
+      "name": "final production console has no page errors or warnings",
+      "pass": true,
+      "details": {
+        "since": "2026-10-25T12:05:17.459Z",
+        "entries": []
+      }
+    },
+    {
+      "name": "final production reload has no runtime exceptions or failed network requests",
+      "pass": true,
+      "details": {
+        "cursor": 8965,
+        "events": [],
+        "hasMore": false,
+        "truncated": false
+      }
+    },
+    {
+      "name": "native narrow panel uses responsive layout without horizontal overflow",
+      "pass": true,
+      "details": {
+        "width": 540,
+        "height": 768,
+        "scrollWidth": 525,
+        "scrollHeight": 1466,
+        "selected": "B2194"
+      }
+    }
+  ],
+  "performance": {
+    "fps": 60.120240480961925,
+    "frames": 60,
+    "maxFrameMs": 18.60000000000582,
+    "meanFrameMs": 16.633333333333333
+  },
+  "productionStartedAt": "2026-10-25T12:02:20.608Z",
+  "finalAuditStartedAt": "2026-10-25T12:05:17.459Z",
+  "productionPerformance": {
+    "fps": 59.98200539838119,
+    "frames": 60,
+    "maxFrameMs": 17.69999999999709,
+    "meanFrameMs": 16.67166666666647
+  },
+  "consoleAudit": [],
+  "finishedAt": "2026-10-25T12:11:41.417Z",
+  "passed": 19,
+  "failed": 0
+}

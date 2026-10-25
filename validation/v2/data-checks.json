@@ -1,0 +1,156 @@
+{
+  "checked_on": "2026-10-25",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "binary frame layout",
+      "pass": true,
+      "details": {
+        "bytes": 39431376,
+        "native_cells": 102400,
+        "components": [
+          "stage_m_DVR90",
+          "depth_above_native_ground_m",
+          "east_velocity_ms",
+          "north_velocity_ms"
+        ]
+      }
+    },
+    {
+      "name": "finite nonnegative native fields",
+      "pass": true,
+      "details": {
+        "depth_range_m": [
+          0.0,
+          13.303120613098145
+        ],
+        "max_speed_ms": 5.5069
+      }
+    },
+    {
+      "name": "native open-boundary volume balance",
+      "pass": true,
+      "details": {
+        "native_solver_max_abs_error_m3": 4.284083843231201e-08,
+        "float32_saved_fields_max_abs_error_m3": 0.0019075148738920689,
+        "relative_saved_field_error": 2.380635819261973e-10
+      }
+    },
+    {
+      "name": "full rise and retreat",
+      "pass": true,
+      "details": {
+        "volume_20min_m3": 907837.7954595087,
+        "volume_70min_m3": 8012627.796553727,
+        "volume_end_m3": 662124.256476836
+      }
+    },
+    {
+      "name": "independent native terrain and building-bed registration",
+      "pass": true,
+      "details": {
+        "random_triangles": 1024,
+        "max_error_m": 0.0,
+        "crs": "EPSG:25832 / DVR90",
+        "note": "Consistency, not measurement accuracy."
+      }
+    },
+    {
+      "name": "free surface equals ground plus displayed water depth",
+      "pass": true,
+      "details": {
+        "wet_max_error_m": 1.9073486328125e-06,
+        "surface_height_bias_m": 0.018,
+        "waves_change_normals_only": true
+      }
+    },
+    {
+      "name": "dry shallow and building velocity masks",
+      "pass": true,
+      "details": {
+        "shallow_cutoff_m": 0.1,
+        "building_mask_nodes": 4861
+      }
+    },
+    {
+      "name": "display interpolation tracks native wet streets",
+      "pass": true,
+      "details": {
+        "samples": 7867,
+        "p95_stage_difference_m": 0.013775253668427467,
+        "max_stage_difference_m": 0.34736061096191406,
+        "method": "convex local wet-neighbour interpolation"
+      }
+    },
+    {
+      "name": "schematic buildings show deep inundation",
+      "pass": true,
+      "details": {
+        "t": 3600,
+        "roofOnly": 61,
+        "roofSubmerged": 75,
+        "upperFloor": 163,
+        "groundFloor": 383
+      }
+    },
+    {
+      "name": "same building progresses from dry to roof exposure and retreat",
+      "pass": true,
+      "details": {
+        "building": "B2194",
+        "depth_20min": 0.0,
+        "depth_60min": 7.534615516662598,
+        "depth_110min": 0.0,
+        "height_is_schematic": true
+      }
+    },
+    {
+      "name": "response is bound to V2 water result",
+      "pass": true,
+      "details": {
+        "route_m": 1410.28,
+        "logs": [
+          {
+            "t": 0,
+            "text": "假设资源就绪 · 新外洪情景"
+          },
+          {
+            "t": 1200,
+            "text": "R01 · 沿源道路候选路线出发"
+          },
+          {
+            "t": 1835,
+            "text": "R01 · 到达候选检查点"
+          },
+          {
+            "t": 2640,
+            "text": "R01 · 驻点水深超阈（假设）"
+          },
+          {
+            "t": 6360,
+            "text": "R01 · 驻点水深回落（假设）"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scenario metadata remains explicit",
+      "pass": true,
+      "details": {
+        "scenario": "BELL-RIVER-STRESS-02",
+        "boundary": "west river crossing inlet stage / east river corridor outlet stage; remaining boundaries reflective",
+        "particle_semantics": "instantaneous velocity-field tracers, not debris or real tracked objects"
+      }
+    }
+  ],
+  "sha256": {
+    "city.json": "0b3ffd705535953638828290993fdf9ec5111e51cc213febcc5b5e9a421d6474",
+    "urban.json": "3d9abc2e11d9a05f46497f89552bfb28831d0a114241ad2c8262e5fb585f8a61",
+    "urban-fields.bin": "6f495125756a79c9c707df1bed9c121cbfe48be25b264ca4ab0fad100e1dd42d",
+    "urban-ground.bin": "01838c5f56d9bbb94b100a4719610a8f3f6c8671122bef3444417b47adced2b1",
+    "urban-buildings.bin": "54e97a3b7d368abaa215ac4bad6beb6182a5ce2b4ab93cf4d364c42c251eccf0",
+    "urban-emergency.json": "2ec9c1c6c39d076548cd6248439adc67fac719dfee3b8e4252d20290f9089854",
+    "city-ground.jpg": "31e2f66c1dc51ad6f8104657e943538d1bddc5ce9235c26814fc4099840d02c8"
+  }
+}

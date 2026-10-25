@@ -1,0 +1,56 @@
+# macOS / external-drive metadata
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+
+# Dependencies, builds and caches
+node_modules/
+app/dist/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.vite/
+*.log
+*.pid
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+project-locations.json
+MVP-任务交接.md
+README-启动与交付.md
+验收报告.md
+
+# Original inputs, solver outputs and local archives stay on the SSD.
+raw/
+prepared/
+derived/
+results/*
+!results/.gitkeep
+references/
+versions/
+*.zip
+*.sww
+*.npz
+*.tif
+*.tiff
+
+# Keep attribution, but exclude generated delivery artifacts.
+delivery/*
+!delivery/NOTICE-数据与许可.md
+!delivery/third-party/
+delivery/third-party/._*
+
+# Preserve compact V2 verification records, not local exports / logs / screenshots.
+validation/*
+!validation/v2/
+validation/v2/*
+!validation/v2/data-checks.json
+!validation/v2/tracer-checks.json
+!validation/v2/browser-checks.json

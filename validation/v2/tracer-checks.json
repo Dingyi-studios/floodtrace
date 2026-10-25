@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-25",
+  "passed": 4,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "constant-flow analytic advection / east-north to east-south conversion",
+      "pass": true,
+      "details": {
+        "x": 14.5,
+        "z": 15.5,
+        "stage": 20,
+        "depth": 3,
+        "vx": 1.25,
+        "vz": -0.75
+      }
+    },
+    {
+      "name": "rotational-flow analytic integration",
+      "pass": true,
+      "details": {
+        "position_error_m": 0.00016666636446364236
+      }
+    },
+    {
+      "name": "dry, shallow, solid, stagnant and outside masks",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "actual model-field trajectories remain on eligible wet field",
+      "pass": true,
+      "details": {
+        "successful_steps": 3945,
+        "masked_terminations": 3
+      }
+    }
+  ]
+}
