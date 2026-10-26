@@ -1,0 +1,55 @@
+{
+  "version": "0.4.1",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "case": "compound",
+      "name": "initial station inventory, separate people and patrol homes",
+      "passed": true
+    },
+    {
+      "case": "compound",
+      "name": "completed transfers and two rescue teams assigned to departure station",
+      "passed": true
+    },
+    {
+      "case": "compound",
+      "name": "partial delivery and exact dispatch-time boundary",
+      "passed": true
+    },
+    {
+      "case": "compound",
+      "name": "station conservation, capacities, deterministic rewind and charts",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "name": "initial station inventory, separate people and patrol homes",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "name": "completed transfers and two rescue teams assigned to departure station",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "name": "partial delivery and exact dispatch-time boundary",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "name": "station conservation, capacities, deterministic rewind and charts",
+      "passed": true
+    },
+    {
+      "name": "crowded labels have bounded one-row offsets and no accumulating stack",
+      "passed": true
+    },
+    {
+      "name": "hidden/off-screen labels and camera obstacles do not cause phantom stacking",
+      "passed": true
+    }
+  ]
+}

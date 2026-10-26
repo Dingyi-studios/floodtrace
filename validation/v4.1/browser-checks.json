@@ -1,0 +1,1656 @@
+{
+  "version": "0.4.1",
+  "date": "2026-10-26T07:50:12.644Z",
+  "build": "index-C9IS32ef.js",
+  "earlierScopedBuild": "index-CyYC1EWb.js",
+  "device": "Mac M1 / 8GB",
+  "viewports": [
+    "1440x960@2",
+    "540px narrow"
+  ],
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "H01 auto follow",
+      "pass": true,
+      "before": {
+        "camera": [
+          96.082056557403,
+          187.29498021069816,
+          46.53305050832655
+        ],
+        "follow": true,
+        "id": "H01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          37.88974621851867,
+          140.6659920087363,
+          -23.829091620983274
+        ],
+        "playing": true,
+        "t": 359.30999999999966,
+        "target": [
+          37.583898860032946,
+          137.79653908215437,
+          -25.46468204228269
+        ]
+      },
+      "after": {
+        "camera": [
+          217.40223076288373,
+          178.9208475398856,
+          -74.7432263116615
+        ],
+        "follow": true,
+        "id": "H01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          160.55445791945914,
+          129.23608484720634,
+          -148.42141738448808
+        ],
+        "playing": true,
+        "t": 376.543499999999,
+        "target": [
+          158.90223076288362,
+          129.42084753988556,
+          -146.74322631166152
+        ]
+      },
+      "paused": {
+        "camera": [
+          241.7541647776376,
+          176.25915682595104,
+          -99.47783868440897
+        ],
+        "follow": true,
+        "id": "H01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          183.25416477763747,
+          126.75915682595095,
+          -171.47783868440897
+        ],
+        "playing": false,
+        "t": 379.7789999999989,
+        "target": [
+          183.25416477763747,
+          126.75915682595095,
+          -171.47783868440897
+        ]
+      }
+    },
+    {
+      "name": "B01 auto follow",
+      "pass": true,
+      "before": {
+        "camera": [
+          648.5591430823267,
+          56.21323176684509,
+          864.4569936395791
+        ],
+        "follow": true,
+        "id": "B01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          600,
+          14.963055115690326,
+          804.4257425742611
+        ],
+        "playing": true,
+        "t": 1308.225499999998,
+        "target": [
+          599.807418821052,
+          14.961772776535756,
+          804.4548714718564
+        ]
+      },
+      "after": {
+        "camera": [
+          664.7500000000001,
+          56.28166651189704,
+          849.8028802880409
+        ],
+        "follow": true,
+        "id": "B01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          616,
+          15.031666511897024,
+          789.8028802880408
+        ],
+        "playing": true,
+        "t": 1325.2489999999932,
+        "target": [
+          616.0000000000001,
+          15.031666511897026,
+          789.8028802880409
+        ]
+      },
+      "paused": {
+        "camera": [
+          664.75,
+          56.29331416957157,
+          844.402699662556
+        ],
+        "follow": true,
+        "id": "B01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          616,
+          15.043314169571556,
+          784.402699662556
+        ],
+        "playing": false,
+        "t": 1327.9984999999924,
+        "target": [
+          616,
+          15.04331416957156,
+          784.402699662556
+        ]
+      }
+    },
+    {
+      "name": "G01 auto follow",
+      "pass": true,
+      "before": {
+        "camera": [
+          66.20776435293641,
+          72.43393662250796,
+          -28.136415172260342
+        ],
+        "follow": true,
+        "id": "G01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          6.11945869394081,
+          31.419653977098054,
+          -81.08618882769447
+        ],
+        "playing": true,
+        "t": 918.9715000000008,
+        "target": [
+          17.457764352936408,
+          31.183936622507947,
+          -88.13641517226034
+        ]
+      },
+      "after": {
+        "camera": [
+          42.46805356617376,
+          72.47763087407654,
+          -13.01723143333323
+        ],
+        "follow": true,
+        "id": "G01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          -6.281946433826231,
+          31.22763087407648,
+          -73.01723143333328
+        ],
+        "playing": true,
+        "t": 936.2425000000032,
+        "target": [
+          -6.2819464338262305,
+          31.22763087407648,
+          -73.01723143333327
+        ]
+      },
+      "paused": {
+        "camera": [
+          43.04044932797111,
+          72.3492649759294,
+          -10.910659275970197
+        ],
+        "follow": true,
+        "id": "G01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          -5.70955067202888,
+          31.09926497592936,
+          -70.91065927597023
+        ],
+        "playing": false,
+        "t": 937.9825000000033,
+        "target": [
+          -5.70955067202888,
+          31.09926497592936,
+          -70.91065927597023
+        ]
+      }
+    },
+    {
+      "name": "T01 auto follow",
+      "pass": true,
+      "before": {
+        "camera": [
+          86.661898290366,
+          86.5026441941209,
+          -41.21231942220343
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          45.88149921723907,
+          -99.00675568652726
+        ],
+        "playing": true,
+        "t": 20.25099999999991,
+        "target": [
+          47.56189726793303,
+          30.402645767502193,
+          -100.7123194751792
+        ]
+      },
+      "after": {
+        "camera": [
+          101.684418454738,
+          86.16294114834169,
+          -50.26025416705034
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          62.80488074408322,
+          -109.90218988857168
+        ],
+        "playing": true,
+        "t": 37.75299999999997,
+        "target": [
+          62.584418454738014,
+          30.0629411483417,
+          -109.7602541670504
+        ]
+      },
+      "paused": {
+        "camera": [
+          103.3755962795836,
+          86.13504813375435,
+          -51.34905055714141
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          64.27559627958364,
+          -110.84905055714148
+        ],
+        "playing": false,
+        "t": 39.27399999999988,
+        "target": [
+          64.27559627958364,
+          30.035048133754373,
+          -110.84905055714148
+        ]
+      }
+    },
+    {
+      "name": "V01 auto follow and pause",
+      "pass": true,
+      "before": {
+        "camera": [
+          41.98059165204356,
+          69.71694708733281,
+          -18.51727770903809
+        ],
+        "following": true,
+        "id": "V01",
+        "labels": [],
+        "object": [
+          -6.379820195857743,
+          31.24363343121752,
+          -73.37743350992544
+        ],
+        "t": 558.3255000000005,
+        "target": [
+          -3.5194083479564147,
+          31.216947087332784,
+          -74.51727770903808
+        ]
+      },
+      "after": {
+        "camera": [
+          65.9711358024746,
+          68.07469968947687,
+          22.87439955106219
+        ],
+        "following": true,
+        "id": "V01",
+        "object": [
+          21.073654320993217,
+          29.56421466918571,
+          -33.56714927048668
+        ],
+        "t": 581.0715000000023,
+        "target": [
+          20.471135802474645,
+          29.57469968947684,
+          -33.12560044893782
+        ]
+      },
+      "paused": {
+        "camera": [
+          52.32967985590094,
+          69.9213246914426,
+          -25.27319972537009
+        ],
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "object": [
+          6.829679855900942,
+          31.421324691442113,
+          -81.27319972537038
+        ],
+        "playing": false,
+        "t": 949.7895000000326,
+        "target": [
+          6.829679855900942,
+          31.421324691442113,
+          -81.27319972537038
+        ]
+      }
+    },
+    {
+      "name": "2D and 3D preserve patrol follow",
+      "pass": true,
+      "two": {
+        "camera": [
+          64.27559627958364,
+          3028.6851493973763,
+          -20.862549949146143
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "2D",
+        "patrolXY": [
+          64.27559627958364,
+          -110.84905055714148
+        ],
+        "playing": false,
+        "t": 39.27399999999988,
+        "target": [
+          64.27559627958364,
+          30.035048133754373,
+          -110.84905055714148
+        ]
+      },
+      "three": {
+        "camera": [
+          103.3755962795836,
+          86.13504813375434,
+          -51.34905055714141
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          64.27559627958364,
+          -110.84905055714148
+        ],
+        "playing": false,
+        "t": 39.27399999999988,
+        "target": [
+          64.27559627958364,
+          30.035048133754373,
+          -110.84905055714148
+        ]
+      }
+    },
+    {
+      "name": "Scrub and rewind preserve follow",
+      "pass": true,
+      "end": {
+        "camera": [
+          237.39999999999995,
+          83.07142931054341,
+          -137.29999999999995
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          198.3,
+          -196.8
+        ],
+        "playing": false,
+        "t": 7200,
+        "target": [
+          198.3,
+          26.971429310543435,
+          -196.8
+        ]
+      },
+      "rewind": {
+        "camera": [
+          65.39999999999999,
+          87.03874554576217,
+          -26.89999999999994
+        ],
+        "follow": true,
+        "id": "T01",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "patrolXY": [
+          26.3,
+          -86.4
+        ],
+        "playing": false,
+        "t": 0,
+        "target": [
+          26.3,
+          30.938745545762195,
+          -86.4
+        ]
+      }
+    },
+    {
+      "name": "Compound station notes rewind and conservation",
+      "pass": true,
+      "initial": {
+        "follow": false,
+        "notes": [
+          [
+            "people",
+            "0"
+          ],
+          [
+            "supplies",
+            "6000"
+          ],
+          [
+            "dispatchedTeams",
+            "0"
+          ],
+          [
+            "reserved",
+            "0"
+          ],
+          [
+            "available",
+            "160"
+          ],
+          [
+            "received",
+            "0"
+          ],
+          [
+            "loaded",
+            "0"
+          ],
+          [
+            "dispatchedPeople",
+            "0"
+          ]
+        ],
+        "stations": [
+          {
+            "available": 160,
+            "capacity": 160,
+            "depots": [
+              "S01"
+            ],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A01",
+            "loaded": 0,
+            "name": "预定集结点 A",
+            "onsite": [
+              {
+                "id": "H01",
+                "name": "北区物资直升机",
+                "status": "standby",
+                "type": "helicopter"
+              },
+              {
+                "id": "H02",
+                "name": "南区物资直升机",
+                "status": "standby",
+                "type": "helicopter"
+              },
+              {
+                "id": "V01",
+                "name": "集结点运输车",
+                "status": "standby",
+                "type": "vehicle"
+              },
+              {
+                "id": "V02",
+                "name": "道路补给车",
+                "status": "standby",
+                "type": "vehicle"
+              },
+              {
+                "id": "V03",
+                "name": "水情检查车",
+                "status": "standby",
+                "type": "vehicle"
+              },
+              {
+                "id": "G01",
+                "name": "东区支援队",
+                "status": "standby",
+                "type": "crew"
+              },
+              {
+                "id": "G02",
+                "name": "西区支援队",
+                "status": "standby",
+                "type": "crew"
+              },
+              {
+                "id": "T01",
+                "name": "安全巡检 1",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 0,
+            "received": 0,
+            "reserved": 0,
+            "supplies": 6000,
+            "xy": [
+              26.3,
+              -86.4
+            ]
+          },
+          {
+            "available": 140,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A02",
+            "loaded": 0,
+            "name": "预定集结点 B",
+            "onsite": [
+              {
+                "id": "T02",
+                "name": "安全巡检 2",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 0,
+            "received": 0,
+            "reserved": 0,
+            "supplies": 0,
+            "xy": [
+              347.2,
+              -338
+            ]
+          },
+          {
+            "available": 140,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A03",
+            "loaded": 0,
+            "name": "预定集结点 C",
+            "onsite": [
+              {
+                "id": "T03",
+                "name": "安全巡检 3",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 0,
+            "received": 0,
+            "reserved": 0,
+            "supplies": 0,
+            "xy": [
+              -79.6,
+              146.6
+            ]
+          }
+        ]
+      },
+      "end": {
+        "notes": [
+          [
+            "people",
+            "60"
+          ],
+          [
+            "supplies",
+            "5440"
+          ],
+          [
+            "dispatchedTeams",
+            "2"
+          ],
+          [
+            "reserved",
+            "0"
+          ],
+          [
+            "available",
+            "100"
+          ],
+          [
+            "received",
+            "0"
+          ],
+          [
+            "loaded",
+            "560"
+          ],
+          [
+            "dispatchedPeople",
+            "8"
+          ]
+        ],
+        "stations": [
+          {
+            "available": 100,
+            "capacity": 160,
+            "depots": [
+              "S01"
+            ],
+            "dispatchedPeople": 8,
+            "dispatchedTeams": 2,
+            "id": "A01",
+            "loaded": 560,
+            "name": "预定集结点 A",
+            "onsite": [
+              {
+                "id": "H01",
+                "name": "北区物资直升机",
+                "status": "complete",
+                "type": "helicopter"
+              },
+              {
+                "id": "H02",
+                "name": "南区物资直升机",
+                "status": "complete",
+                "type": "helicopter"
+              },
+              {
+                "id": "V01",
+                "name": "集结点运输车",
+                "status": "complete",
+                "type": "vehicle"
+              },
+              {
+                "id": "V02",
+                "name": "道路补给车",
+                "status": "complete",
+                "type": "vehicle"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 60,
+            "received": 0,
+            "reserved": 0,
+            "supplies": 5440,
+            "xy": [
+              26.3,
+              -86.4
+            ]
+          },
+          {
+            "available": 140,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A02",
+            "loaded": 0,
+            "name": "预定集结点 B",
+            "onsite": [
+              {
+                "id": "G01",
+                "name": "东区支援队",
+                "status": "guiding",
+                "type": "crew"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 0,
+            "received": 200,
+            "reserved": 0,
+            "supplies": 200,
+            "xy": [
+              347.2,
+              -338
+            ]
+          },
+          {
+            "available": 0,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A03",
+            "loaded": 0,
+            "name": "预定集结点 C",
+            "onsite": [
+              {
+                "id": "G02",
+                "name": "西区支援队",
+                "status": "guiding",
+                "type": "crew"
+              },
+              {
+                "id": "T03",
+                "name": "安全巡检 3",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 120,
+            "received": 130,
+            "reserved": 20,
+            "supplies": 130,
+            "xy": [
+              -79.6,
+              146.6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Historical station inventory and population",
+      "pass": true,
+      "initial": [
+        {
+          "available": 160,
+          "capacity": 160,
+          "depots": [
+            "S01"
+          ],
+          "dispatchedPeople": 0,
+          "dispatchedTeams": 0,
+          "id": "A01",
+          "loaded": 0,
+          "name": "预定集结点 A",
+          "onsite": [
+            {
+              "id": "H01",
+              "name": "北区物资直升机",
+              "status": "standby",
+              "type": "helicopter"
+            },
+            {
+              "id": "H02",
+              "name": "南区物资直升机",
+              "status": "standby",
+              "type": "helicopter"
+            },
+            {
+              "id": "V01",
+              "name": "集结点运输车",
+              "status": "standby",
+              "type": "vehicle"
+            },
+            {
+              "id": "V02",
+              "name": "道路补给车",
+              "status": "standby",
+              "type": "vehicle"
+            },
+            {
+              "id": "V03",
+              "name": "水情检查车",
+              "status": "standby",
+              "type": "vehicle"
+            },
+            {
+              "id": "G01",
+              "name": "东区支援队",
+              "status": "standby",
+              "type": "crew"
+            },
+            {
+              "id": "G02",
+              "name": "西区支援队",
+              "status": "standby",
+              "type": "crew"
+            },
+            {
+              "id": "T01",
+              "name": "安全巡检 1",
+              "status": "patrolling",
+              "type": "patrol"
+            }
+          ],
+          "patrolPeople": 2,
+          "patrolTeams": 1,
+          "people": 0,
+          "received": 0,
+          "reserved": 0,
+          "supplies": 6000,
+          "xy": [
+            26.3,
+            -86.4
+          ]
+        },
+        {
+          "available": 140,
+          "capacity": 140,
+          "depots": [],
+          "dispatchedPeople": 0,
+          "dispatchedTeams": 0,
+          "id": "A02",
+          "loaded": 0,
+          "name": "预定集结点 B",
+          "onsite": [
+            {
+              "id": "T02",
+              "name": "安全巡检 2",
+              "status": "patrolling",
+              "type": "patrol"
+            }
+          ],
+          "patrolPeople": 2,
+          "patrolTeams": 1,
+          "people": 0,
+          "received": 0,
+          "reserved": 0,
+          "supplies": 0,
+          "xy": [
+            416.2,
+            -116.3
+          ]
+        },
+        {
+          "available": 140,
+          "capacity": 140,
+          "depots": [],
+          "dispatchedPeople": 0,
+          "dispatchedTeams": 0,
+          "id": "A03",
+          "loaded": 0,
+          "name": "预定集结点 C",
+          "onsite": [
+            {
+              "id": "T03",
+              "name": "安全巡检 3",
+              "status": "patrolling",
+              "type": "patrol"
+            }
+          ],
+          "patrolPeople": 2,
+          "patrolTeams": 1,
+          "people": 0,
+          "received": 0,
+          "reserved": 0,
+          "supplies": 0,
+          "xy": [
+            119.5,
+            259.2
+          ]
+        }
+      ],
+      "end": {
+        "ops": {
+          "counts": {
+            "arrived": 240,
+            "blocked": 120,
+            "moving": 0,
+            "waiting": 0
+          },
+          "groups": [
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E01",
+              "moving": false,
+              "status": 2,
+              "target": 2,
+              "xy": [
+                119.5,
+                259.2
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E02",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E03",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E04",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E05",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E06",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E07",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E08",
+              "moving": false,
+              "status": 2,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E09",
+              "moving": false,
+              "status": 2,
+              "target": 2,
+              "xy": [
+                119.5,
+                259.2
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E10",
+              "moving": false,
+              "status": 2,
+              "target": 2,
+              "xy": [
+                119.5,
+                259.2
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E11",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                -564.7,
+                56.9
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E12",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                -588,
+                -1.3
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E13",
+              "moving": false,
+              "status": 2,
+              "target": 2,
+              "xy": [
+                119.5,
+                259.2
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E14",
+              "moving": false,
+              "status": 2,
+              "target": 2,
+              "xy": [
+                119.5,
+                259.2
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E15",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                183.6,
+                334.9
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E16",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                161.5,
+                660.1
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E17",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                707.8,
+                281.3
+              ]
+            },
+            {
+              "count": 20,
+              "heading": 0,
+              "id": "E18",
+              "moving": false,
+              "status": 3,
+              "target": -1,
+              "xy": [
+                821.8,
+                216.2
+              ]
+            }
+          ],
+          "occupancy": [
+            140,
+            0,
+            100
+          ],
+          "patrols": [
+            {
+              "count": 2,
+              "heading": 0,
+              "id": "T01",
+              "moving": false,
+              "status": 3,
+              "target": 0,
+              "xy": [
+                26.3,
+                -86.4
+              ]
+            },
+            {
+              "count": 2,
+              "heading": 0,
+              "id": "T02",
+              "moving": false,
+              "status": 4,
+              "target": 1,
+              "xy": [
+                367.3,
+                -171.9
+              ]
+            },
+            {
+              "count": 2,
+              "heading": 0,
+              "id": "T03",
+              "moving": false,
+              "status": 1,
+              "target": 2,
+              "xy": [
+                107.1,
+                227.7
+              ]
+            }
+          ],
+          "reserved": [
+            0,
+            0,
+            0
+          ],
+          "time": 21600,
+          "total": 360
+        },
+        "stations": [
+          {
+            "available": 20,
+            "capacity": 160,
+            "depots": [
+              "S01"
+            ],
+            "dispatchedPeople": 8,
+            "dispatchedTeams": 2,
+            "id": "A01",
+            "loaded": 560,
+            "name": "预定集结点 A",
+            "onsite": [
+              {
+                "id": "H01",
+                "name": "北区物资直升机",
+                "status": "complete",
+                "type": "helicopter"
+              },
+              {
+                "id": "H02",
+                "name": "南区物资直升机",
+                "status": "complete",
+                "type": "helicopter"
+              },
+              {
+                "id": "V01",
+                "name": "集结点运输车",
+                "status": "complete",
+                "type": "vehicle"
+              },
+              {
+                "id": "V02",
+                "name": "道路补给车",
+                "status": "complete",
+                "type": "vehicle"
+              },
+              {
+                "id": "T01",
+                "name": "安全巡检 1",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 140,
+            "received": 0,
+            "reserved": 0,
+            "supplies": 5440,
+            "xy": [
+              26.3,
+              -86.4
+            ]
+          },
+          {
+            "available": 140,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A02",
+            "loaded": 0,
+            "name": "预定集结点 B",
+            "onsite": [
+              {
+                "id": "G01",
+                "name": "东区支援队",
+                "status": "guiding",
+                "type": "crew"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 0,
+            "received": 200,
+            "reserved": 0,
+            "supplies": 200,
+            "xy": [
+              416.2,
+              -116.3
+            ]
+          },
+          {
+            "available": 40,
+            "capacity": 140,
+            "depots": [],
+            "dispatchedPeople": 0,
+            "dispatchedTeams": 0,
+            "id": "A03",
+            "loaded": 0,
+            "name": "预定集结点 C",
+            "onsite": [
+              {
+                "id": "G02",
+                "name": "西区支援队",
+                "status": "guiding",
+                "type": "crew"
+              },
+              {
+                "id": "T03",
+                "name": "安全巡检 3",
+                "status": "patrolling",
+                "type": "patrol"
+              }
+            ],
+            "patrolPeople": 2,
+            "patrolTeams": 1,
+            "people": 100,
+            "received": 130,
+            "reserved": 0,
+            "supplies": 130,
+            "xy": [
+              119.5,
+              259.2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select A02 opens station-specific remarks",
+      "pass": true,
+      "detail": {
+        "id": "A02",
+        "supplies": "200",
+        "text": "A02 · 集结点备注\n示意台账\n\n预定集结点 B · 固定信息集中在此查看\n\n已集结群众\n0\n人\n剩余物资\n200\n箱 · 示意\n已派出救援队\n0\n队 · 累计\n在途预留 / 剩余容量\n0 / 140 人\n集结容量\n140 人 · 假设\n累计收到 / 装载出库\n200 / 0 箱\n已派出救援人员\n0 人\n归属巡检\n1 队 / 2 人\n当前模型水深\n0.00 m\n驻点资源与说明\nG01\n东区支援队\n集结点引导\n\n群众人数与救援人员分开统计。派出队伍按本集结点出发累计；物资按装载、补给与投送更新，未设消耗。容量、库存和任务为示意。\n\n定位集结点"
+      }
+    },
+    {
+      "name": "Historical moving resource follows",
+      "pass": true,
+      "detail": {
+        "camera": [
+          -42.17648916423645,
+          188.5105853453132,
+          359.4857941807504
+        ],
+        "follow": true,
+        "id": "H02",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          -100.6764891642365,
+          139.01058534531316,
+          287.4857941807503
+        ],
+        "playing": false,
+        "t": 564.4855000000001,
+        "target": [
+          -100.6764891642365,
+          139.01058534531316,
+          287.4857941807503
+        ]
+      }
+    },
+    {
+      "name": "Manual map drag exits follow",
+      "pass": true,
+      "detail": {
+        "camera": [
+          -70.86347796009592,
+          201.26589433479097,
+          366.80767556014314
+        ],
+        "follow": false,
+        "id": "H02",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          -100.6764891642365,
+          139.01058534531316,
+          287.4857941807503
+        ],
+        "playing": false,
+        "t": 564.4855000000001,
+        "target": [
+          -100.6764891642365,
+          139.01058534531316,
+          287.4857941807503
+        ]
+      }
+    },
+    {
+      "name": "Evacuation retains 360 people and three patrols with assembly-only labels",
+      "pass": true,
+      "detail": {
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "patrols": 3,
+        "total": 360
+      }
+    },
+    {
+      "name": "Narrow station notes fit width",
+      "pass": true,
+      "detail": {
+        "card": {
+          "left": 0,
+          "right": 514,
+          "width": 514
+        },
+        "client": 525,
+        "content": 525,
+        "width": 540
+      }
+    },
+    {
+      "name": "Final build: depot merged into assembly remarks, 13 data resources and 12 mobile entries",
+      "pass": true,
+      "detail": {
+        "fixedDepotMesh": false,
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "list": [
+          "H01",
+          "H02",
+          "V01",
+          "V02",
+          "V03",
+          "G01",
+          "G02",
+          "T01",
+          "T02",
+          "T03",
+          "B01",
+          "B02"
+        ],
+        "resources": 13,
+        "station": {
+          "available": 100,
+          "capacity": 160,
+          "depots": [
+            "S01"
+          ],
+          "dispatchedPeople": 8,
+          "dispatchedTeams": 2,
+          "id": "A01",
+          "loaded": 560,
+          "name": "预定集结点 A",
+          "onsite": [
+            {
+              "id": "H01",
+              "name": "北区物资直升机",
+              "status": "complete",
+              "type": "helicopter"
+            },
+            {
+              "id": "H02",
+              "name": "南区物资直升机",
+              "status": "complete",
+              "type": "helicopter"
+            },
+            {
+              "id": "V01",
+              "name": "集结点运输车",
+              "status": "complete",
+              "type": "vehicle"
+            },
+            {
+              "id": "V02",
+              "name": "道路补给车",
+              "status": "complete",
+              "type": "vehicle"
+            }
+          ],
+          "patrolPeople": 2,
+          "patrolTeams": 1,
+          "people": 60,
+          "received": 0,
+          "reserved": 0,
+          "supplies": 5440,
+          "xy": [
+            26.3,
+            -86.4
+          ]
+        },
+        "version": true
+      }
+    },
+    {
+      "name": "Final build camera closes on response and H01 follows",
+      "pass": true,
+      "before": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 0,
+          "droneId": "D01",
+          "ground": 21.976557486243397,
+          "stage": 22.097479286124717,
+          "xy": [
+            847.9612401463511,
+            -54.19526552376669
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "after": {
+        "camera": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": false,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.976557486243397,
+            "stage": 22.097479286124717,
+            "xy": [
+              847.9612401463511,
+              -54.19526552376669
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        },
+        "follow": true,
+        "object": [
+          146.63155009685437,
+          130.7339739887248,
+          -134.2797180892708
+        ],
+        "t": 374.55899999999986,
+        "target": [
+          146.6315500968544,
+          130.7339739887248,
+          -134.2797180892708
+        ]
+      }
+    },
+    {
+      "name": "Browser console has no errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "Station remark resource selection delegates to automatic follow",
+      "pass": true,
+      "detail": {
+        "camera": [
+          104.1441450175403,
+          111.10957592618928,
+          9.456172254497927
+        ],
+        "follow": true,
+        "id": "H02",
+        "labels": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "mode": "3D",
+        "object": [
+          26.3,
+          30.938745545762195,
+          -86.4
+        ],
+        "playing": false,
+        "t": 374.55899999999986,
+        "target": [
+          30.6336795815438,
+          34.532819946787235,
+          -88.12436369752184
+        ]
+      }
+    },
+    {
+      "name": "Assembly layer hides labels and restores station access",
+      "pass": true
+    }
+  ]
+}
