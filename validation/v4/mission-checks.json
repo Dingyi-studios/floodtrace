@@ -1,0 +1,36 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "case": "compound",
+      "check": "19 stable identities / complete finite bounded tracks",
+      "passed": true
+    },
+    {
+      "case": "compound",
+      "check": "inventory conserved throughout load/drop/reload; final delivered330 / crews30",
+      "passed": true
+    },
+    {
+      "case": "compound",
+      "check": "deterministic seek/pause/rewind and wet-road stop",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "check": "19 stable identities / complete finite bounded tracks",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "check": "inventory conserved throughout load/drop/reload; final delivered330 / crews30",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "check": "deterministic seek/pause/rewind and wet-road stop",
+      "passed": true
+    }
+  ]
+}

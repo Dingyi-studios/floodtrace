@@ -1,0 +1,343 @@
+{
+  "version": "0.4.0",
+  "passed": 4,
+  "failed": 0,
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "device": "M1 / 8 GB",
+  "scope": "render/water/mission core soak on index-CyLa0Zpt.js; final narrow-view placement/scroll adjustment separately verified on index-C872Nuxr.js",
+  "checks": [
+    {
+      "name": "main scene median FPS >=30",
+      "passed": true,
+      "medianFPS": 59.8802395210207,
+      "p95FrameMs": 18.6
+    },
+    {
+      "name": "camera PIP median FPS >=24",
+      "passed": true,
+      "medianFPS": 59.8802395210207,
+      "p95FrameMs": 18.6
+    },
+    {
+      "name": "warm model swap heap growth <10%, one active field, stable GPU allocations",
+      "passed": true,
+      "growthFraction": 0.0027855138447498095,
+      "cycles": [
+        {
+          "cycle": 1,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 228261413,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 2,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 237854858,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 3,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238554254,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 4,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238548726,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 5,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238517406,
+          "scenario": "surface",
+          "textures": 6
+        }
+      ]
+    },
+    {
+      "name": "continuous core runtime >=30min, no uncaught errors/context loss",
+      "passed": true,
+      "contextLosses": 0,
+      "elapsedMs": 1871401,
+      "errors": [],
+      "frameCount": 106790,
+      "heap": 176593560,
+      "medianFPS": 59.880239521125056,
+      "p95FrameMs": 17.199999999953434,
+      "renderer": {
+        "geometries": 368,
+        "textures": 6
+      },
+      "samples": [
+        {
+          "elapsedMs": 60000,
+          "geometry": 108,
+          "heap": 153932116,
+          "scenario": "surface",
+          "textures": 5,
+          "time": 3613.999499999999
+        },
+        {
+          "elapsedMs": 120000,
+          "geometry": 187,
+          "heap": 163178558,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 7200
+        },
+        {
+          "elapsedMs": 180032,
+          "geometry": 366,
+          "heap": 159932201,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 3720.2430000000063
+        },
+        {
+          "elapsedMs": 240042,
+          "geometry": 366,
+          "heap": 161306420,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 3720.2430000000063
+        },
+        {
+          "elapsedMs": 300041,
+          "geometry": 366,
+          "heap": 169603040,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 3720.2430000000063
+        },
+        {
+          "elapsedMs": 360043,
+          "geometry": 366,
+          "heap": 163112946,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 3720.2430000000063
+        },
+        {
+          "elapsedMs": 420060,
+          "geometry": 366,
+          "heap": 168111656,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 3720.2430000000063
+        },
+        {
+          "elapsedMs": 480034,
+          "geometry": 370,
+          "heap": 155418126,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 1282.706999999962
+        },
+        {
+          "elapsedMs": 540034,
+          "geometry": 370,
+          "heap": 168445602,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 2182.6529999997742
+        },
+        {
+          "elapsedMs": 600033,
+          "geometry": 370,
+          "heap": 179046550,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 595.5000000000003
+        },
+        {
+          "elapsedMs": 660033,
+          "geometry": 370,
+          "heap": 170367759,
+          "scenario": "surface",
+          "textures": 6,
+          "time": 7200
+        },
+        {
+          "elapsedMs": 720032,
+          "geometry": 195,
+          "heap": 192477734,
+          "scenario": "history",
+          "textures": 6,
+          "time": 8640
+        },
+        {
+          "elapsedMs": 780027,
+          "geometry": 367,
+          "heap": 181757968,
+          "scenario": "history",
+          "textures": 6,
+          "time": 4850
+        },
+        {
+          "elapsedMs": 840025,
+          "geometry": 368,
+          "heap": 189952292,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 900024,
+          "geometry": 368,
+          "heap": 197109404,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 960023,
+          "geometry": 368,
+          "heap": 202137864,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1020024,
+          "geometry": 368,
+          "heap": 192886656,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1080019,
+          "geometry": 368,
+          "heap": 206463108,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1140017,
+          "geometry": 368,
+          "heap": 191011554,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1200026,
+          "geometry": 368,
+          "heap": 203534156,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1260017,
+          "geometry": 368,
+          "heap": 187974992,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1320085,
+          "geometry": 368,
+          "heap": 189254240,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1380037,
+          "geometry": 368,
+          "heap": 189619324,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1440008,
+          "geometry": 368,
+          "heap": 198719784,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1500009,
+          "geometry": 368,
+          "heap": 187408676,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1560006,
+          "geometry": 368,
+          "heap": 180554425,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1620004,
+          "geometry": 368,
+          "heap": 186789721,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1680003,
+          "geometry": 368,
+          "heap": 191163108,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1740000,
+          "geometry": 368,
+          "heap": 189618929,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1800000,
+          "geometry": 368,
+          "heap": 188166371,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        },
+        {
+          "elapsedMs": 1859997,
+          "geometry": 368,
+          "heap": 178213924,
+          "scenario": "history",
+          "textures": 6,
+          "time": 10800
+        }
+      ],
+      "startedAt": 1792987437574
+    }
+  ]
+}

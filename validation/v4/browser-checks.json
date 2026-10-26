@@ -1,0 +1,2585 @@
+{
+  "version": "0.4.0",
+  "passed": 105,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "resource selection H01",
+      "passed": true,
+      "route": [
+        "H01"
+      ],
+      "scenario": "history",
+      "selected": "H01",
+      "title": "H01 · 北区物资直升机"
+    },
+    {
+      "check": "resource selection H02",
+      "passed": true,
+      "route": [
+        "H02"
+      ],
+      "scenario": "history",
+      "selected": "H02",
+      "title": "H02 · 南区物资直升机"
+    },
+    {
+      "check": "resource selection V01",
+      "passed": true,
+      "route": [
+        "V01"
+      ],
+      "scenario": "history",
+      "selected": "V01",
+      "title": "V01 · 集结点运输车"
+    },
+    {
+      "check": "resource selection V02",
+      "passed": true,
+      "route": [
+        "V02"
+      ],
+      "scenario": "history",
+      "selected": "V02",
+      "title": "V02 · 道路补给车"
+    },
+    {
+      "check": "resource selection V03",
+      "passed": true,
+      "route": [
+        "V03"
+      ],
+      "scenario": "history",
+      "selected": "V03",
+      "title": "V03 · 水情检查车"
+    },
+    {
+      "check": "resource selection G01",
+      "passed": true,
+      "route": [
+        "G01"
+      ],
+      "scenario": "history",
+      "selected": "G01",
+      "title": "G01 · 东区支援队"
+    },
+    {
+      "check": "resource selection G02",
+      "passed": true,
+      "route": [
+        "G02"
+      ],
+      "scenario": "history",
+      "selected": "G02",
+      "title": "G02 · 西区支援队"
+    },
+    {
+      "check": "resource selection T01",
+      "passed": true,
+      "route": [],
+      "scenario": "history",
+      "selected": "T01",
+      "title": "T01 · 安全巡检 1"
+    },
+    {
+      "check": "resource selection T02",
+      "passed": true,
+      "route": [],
+      "scenario": "history",
+      "selected": "T02",
+      "title": "T02 · 安全巡检 2"
+    },
+    {
+      "check": "resource selection T03",
+      "passed": true,
+      "route": [],
+      "scenario": "history",
+      "selected": "T03",
+      "title": "T03 · 安全巡检 3"
+    },
+    {
+      "check": "resource selection B01",
+      "passed": true,
+      "route": [
+        "B01"
+      ],
+      "scenario": "history",
+      "selected": "B01",
+      "title": "B01 · 河道巡航艇"
+    },
+    {
+      "check": "resource selection B02",
+      "passed": true,
+      "route": [
+        "B02"
+      ],
+      "scenario": "history",
+      "selected": "B02",
+      "title": "B02 · 浅滩检查艇"
+    },
+    {
+      "check": "resource selection S01",
+      "passed": true,
+      "route": [],
+      "scenario": "history",
+      "selected": "S01",
+      "title": "S01 · 物资补给站"
+    },
+    {
+      "check": "workspace incident → incident",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "P02",
+      "title": "Bellinge · 城市雨洪沙盘",
+      "workspace": "incident"
+    },
+    {
+      "check": "workspace incident → monitor",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 监测证据",
+      "workspace": "monitor"
+    },
+    {
+      "check": "workspace incident → drones",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "D01",
+      "title": "Bellinge · 无人机侦察",
+      "workspace": "drones"
+    },
+    {
+      "check": "workspace incident → response",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "V01",
+      "title": "Bellinge · 应急行动",
+      "workspace": "response"
+    },
+    {
+      "check": "workspace incident → evacuation",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "A01",
+      "title": "Bellinge · 疏散与安全",
+      "workspace": "evacuation"
+    },
+    {
+      "check": "workspace monitor → incident",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 城市雨洪沙盘",
+      "workspace": "incident"
+    },
+    {
+      "check": "workspace monitor → monitor",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 监测证据",
+      "workspace": "monitor"
+    },
+    {
+      "check": "workspace monitor → drones",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "D01",
+      "title": "Bellinge · 无人机侦察",
+      "workspace": "drones"
+    },
+    {
+      "check": "workspace monitor → response",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "V01",
+      "title": "Bellinge · 应急行动",
+      "workspace": "response"
+    },
+    {
+      "check": "workspace monitor → evacuation",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "A01",
+      "title": "Bellinge · 疏散与安全",
+      "workspace": "evacuation"
+    },
+    {
+      "check": "workspace drones → incident",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "P02",
+      "title": "Bellinge · 城市雨洪沙盘",
+      "workspace": "incident"
+    },
+    {
+      "check": "workspace drones → monitor",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 监测证据",
+      "workspace": "monitor"
+    },
+    {
+      "check": "workspace drones → drones",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "D01",
+      "title": "Bellinge · 无人机侦察",
+      "workspace": "drones"
+    },
+    {
+      "check": "workspace drones → response",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "V01",
+      "title": "Bellinge · 应急行动",
+      "workspace": "response"
+    },
+    {
+      "check": "workspace drones → evacuation",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "A01",
+      "title": "Bellinge · 疏散与安全",
+      "workspace": "evacuation"
+    },
+    {
+      "check": "workspace response → incident",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "P02",
+      "title": "Bellinge · 城市雨洪沙盘",
+      "workspace": "incident"
+    },
+    {
+      "check": "workspace response → monitor",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 监测证据",
+      "workspace": "monitor"
+    },
+    {
+      "check": "workspace response → drones",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "D01",
+      "title": "Bellinge · 无人机侦察",
+      "workspace": "drones"
+    },
+    {
+      "check": "workspace response → response",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "V01",
+      "title": "Bellinge · 应急行动",
+      "workspace": "response"
+    },
+    {
+      "check": "workspace response → evacuation",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "A01",
+      "title": "Bellinge · 疏散与安全",
+      "workspace": "evacuation"
+    },
+    {
+      "check": "workspace evacuation → incident",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "P02",
+      "title": "Bellinge · 城市雨洪沙盘",
+      "workspace": "incident"
+    },
+    {
+      "check": "workspace evacuation → monitor",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "G71F04R",
+      "title": "Bellinge · 监测证据",
+      "workspace": "monitor"
+    },
+    {
+      "check": "workspace evacuation → drones",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "D01",
+      "title": "Bellinge · 无人机侦察",
+      "workspace": "drones"
+    },
+    {
+      "check": "workspace evacuation → response",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "V01",
+      "title": "Bellinge · 应急行动",
+      "workspace": "response"
+    },
+    {
+      "check": "workspace evacuation → evacuation",
+      "passed": true,
+      "errors": [],
+      "scenario": "surface",
+      "selected": "A01",
+      "title": "Bellinge · 疏散与安全",
+      "workspace": "evacuation"
+    },
+    {
+      "check": "S01 to drones, gimbal/zoom and EO-depth-risk palette preserve pose/time",
+      "passed": true,
+      "pose": {
+        "p": [
+          1075.841,
+          149.07254541712246,
+          -148.169
+        ],
+        "q": [
+          0.005110271919533237,
+          0.9929946781087884,
+          0.04682844028331956,
+          -0.10836305435508668
+        ],
+        "time": 2400
+      },
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "risk",
+        "open": true,
+        "palette": "whitehot",
+        "pitch": -35,
+        "reading": {
+          "depth": null,
+          "droneId": "D01",
+          "ground": 36.14240083571876,
+          "stage": null,
+          "xy": [
+            1333.478242324171,
+            1018.214462388887
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 80,
+        "zoom": 1.25
+      }
+    },
+    {
+      "check": "camera expand/restore preserves pose/object/time",
+      "passed": true
+    },
+    {
+      "check": "five complete model/mission/camera/evacuation swap cycles retain one active field and no exceptions",
+      "passed": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 228261413,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 2,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 237854858,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 3,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238554254,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 4,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238548726,
+          "scenario": "surface",
+          "textures": 6
+        },
+        {
+          "cycle": 5,
+          "errors": [],
+          "fields": 1,
+          "geometries": 348,
+          "heap": 238517406,
+          "scenario": "surface",
+          "textures": 6
+        }
+      ]
+    },
+    {
+      "check": "failed mission download preserves previous scenario and offers retry",
+      "passed": true,
+      "errors": [],
+      "message": "Failed to fetch；当前情景已保留，可重新选择重试",
+      "modelId": "BELL-RAINFALL-COMPOUND-03",
+      "scenario": "surface",
+      "select": "surface"
+    },
+    {
+      "check": "failed-download retry loads correct historical model and missions",
+      "passed": true,
+      "fields": 1,
+      "model": "BELL-RAINFALL-HISTORICAL-03",
+      "scenario": "history"
+    },
+    {
+      "check": "initial asset failure disables unavailable controls; retry restores app",
+      "passed": true,
+      "navigationDisabled": true,
+      "retryEnabled": true
+    },
+    {
+      "check": "full automatic 115-second tour animates and ends with playback stopped",
+      "passed": true,
+      "observedMs": 291389,
+      "errors": [],
+      "playing": false,
+      "time": 3720.2430000000063,
+      "tour": false
+    },
+    {
+      "check": "actual download includes v0.4 model/mission/camera/coordinates/units",
+      "passed": true,
+      "modelId": "BELL-RAINFALL-COMPOUND-03",
+      "unit": "m",
+      "scenario": "surface"
+    },
+    {
+      "check": "pause freezes complete field, people matrices, resource poses, cargo and totals while visual phase continues",
+      "passed": true,
+      "fieldHash": 2658991520,
+      "bodyHash": 727979725,
+      "time": 576
+    },
+    {
+      "check": "playing advances actual vehicle and model time",
+      "passed": true,
+      "medianFPS": 59.880239521125056,
+      "p95FrameMs": 16.800000000046566,
+      "time": 594.4980000000014,
+      "xy": [
+        53.562469135805785,
+        -57.37620650954227
+      ]
+    },
+    {
+      "check": "2D/3D keeps resource identity, exact time and position",
+      "passed": true,
+      "selected": "V01",
+      "time": 595.5000000000003,
+      "xy": [
+        55.98706172839577,
+        -59.153041526375375
+      ]
+    },
+    {
+      "check": "reference segment 1",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.576672035250945,
+          "droneId": "D01",
+          "ground": 21.8711990827513,
+          "stage": 23.580382141212933,
+          "xy": [
+            848.1076016805953,
+            -54.01773542411508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 2376,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 2",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.576672035250945,
+          "droneId": "D01",
+          "ground": 21.8711990827513,
+          "stage": 23.580382141212933,
+          "xy": [
+            848.1076016805953,
+            -54.01773542411508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 7,
+        "delivered": 330,
+        "depot": 5494.982,
+        "loaded": 505.01800000000014,
+        "onboard": 175.01800000000017,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 1008,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 3",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.576672035250945,
+          "droneId": "D01",
+          "ground": 21.8711990827513,
+          "stage": 23.580382141212933,
+          "xy": [
+            848.1076016805953,
+            -54.01773542411508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P03",
+      "time": 3600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 4",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.576672035250945,
+          "droneId": "D01",
+          "ground": 21.8711990827513,
+          "stage": 23.580382141212933,
+          "xy": [
+            848.1076016805953,
+            -54.01773542411508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D01",
+      "time": 2376,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 5",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 0.003575485994482225,
+          "droneId": "D01",
+          "ground": 21.866630811184052,
+          "stage": 22.00408290254277,
+          "xy": [
+            848.1034389987094,
+            -53.997738001417915
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D01",
+      "time": 2520,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 6",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 0.003575485994482225,
+          "droneId": "D01",
+          "ground": 21.866630811184052,
+          "stage": 22.00408290254277,
+          "xy": [
+            848.1034389987094,
+            -53.997738001417915
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D01",
+      "time": 2520,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 7",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 9.36844148829155,
+          "droneId": "D02",
+          "ground": 12.421399409472148,
+          "stage": 21.813703278639135,
+          "xy": [
+            -248.00341420751977,
+            1001.9996635852208
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D02",
+      "time": 2880,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 8",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D03",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.1812323129761082,
+          "droneId": "D03",
+          "ground": 19.276149179380425,
+          "stage": 20.459837657704725,
+          "xy": [
+            -104.01655692304166,
+            706.003981352048
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D03",
+      "time": 3240,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 9",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D04",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 5.158810910223783,
+          "droneId": "D04",
+          "ground": 16.05742137647443,
+          "stage": 21.157414025905577,
+          "xy": [
+            583.9332479810421,
+            903.3629550308024
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D04",
+      "time": 3024,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 10",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D05",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.3342605855099767,
+          "droneId": "D05",
+          "ground": 21.877271531002695,
+          "stage": 23.34330368404479,
+          "xy": [
+            848.1028691187795,
+            -54.03226274275782
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D05",
+      "time": 3600,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 11",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D06",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 0,
+          "droneId": "D06",
+          "ground": 30.939331181336552,
+          "stage": 30.970296571148225,
+          "xy": [
+            26.289140662554715,
+            -86.39903933197965
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D06",
+      "time": 2880,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 12",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": true,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D02",
+      "time": 3600,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 13",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": true,
+        "mode": "depth",
+        "open": true,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "D02",
+      "time": 3600,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 14",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 3600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 15",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 3600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 16",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "surface",
+      "selected": "P03",
+      "time": 5400,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 17",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 7200,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 18",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 7,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "surface",
+      "selected": "V01",
+      "time": 2160,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 19",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 4,
+        "delivered": 60,
+        "depot": 5940,
+        "loaded": 60,
+        "onboard": 0,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "H01",
+      "time": 468,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 20",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 80,
+        "depot": 5760,
+        "loaded": 240,
+        "onboard": 160,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "H02",
+      "time": 607.314,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 21",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 60,
+        "depot": 5790,
+        "loaded": 209.99999999999997,
+        "onboard": 149.99999999999997,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "H01",
+      "time": 556.295,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 22",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 7,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "G01",
+      "time": 2016,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 23",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 60,
+        "depot": 5776.863333333334,
+        "loaded": 223.13666666666668,
+        "onboard": 163.13666666666668,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "V01",
+      "time": 576,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 24",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "E03",
+      "time": 1730,
+      "workspace": "evacuation"
+    },
+    {
+      "check": "reference segment 25",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 3600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 26",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "surface",
+      "selected": "P02",
+      "time": 3600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 1",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 7128,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 2",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 3024.0000000000005,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 3",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P03",
+      "time": 10800,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 4",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 11.758652701913338,
+          "droneId": "D02",
+          "ground": 12.421382895047262,
+          "stage": 24.203929563665827,
+          "xy": [
+            -247.9997789884519,
+            1002.002316213839
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D01",
+      "time": 7128,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 5",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.5056709762664506,
+          "droneId": "D01",
+          "ground": 11.68971637962726,
+          "stage": 13.233273562522388,
+          "xy": [
+            896.0483893509452,
+            378.0031840811508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D01",
+      "time": 7559.999999999999,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 6",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D01",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.5056709762664506,
+          "droneId": "D01",
+          "ground": 11.68971637962726,
+          "stage": 13.233273562522388,
+          "xy": [
+            896.0483893509452,
+            378.0031840811508
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D01",
+      "time": 7559.999999999999,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 7",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6778872328046046,
+          "droneId": "D02",
+          "ground": 11.38550334440001,
+          "stage": 13.25583866187648,
+          "xy": [
+            808.0036876366917,
+            545.891684868242
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D02",
+      "time": 8640,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 8",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D03",
+        "full": false,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.201385334651672,
+          "droneId": "D03",
+          "ground": 31.511549748284228,
+          "stage": 32.74881552533159,
+          "xy": [
+            -139.19953054122652,
+            -131.19916563028295
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D03",
+      "time": 9720,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 9",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D04",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.0668590848471344,
+          "droneId": "D04",
+          "ground": 16.056512933621946,
+          "stage": 17.06458498068173,
+          "xy": [
+            583.9263144577135,
+            903.36001695808
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D04",
+      "time": 9072,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 10",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D05",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.4997176304209063,
+          "droneId": "D05",
+          "ground": 11.690680734668922,
+          "stage": 13.231509394273733,
+          "xy": [
+            895.9495708483107,
+            377.9975003435276
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D05",
+      "time": 10800,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 11",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D06",
+        "full": false,
+        "mode": "eo",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 0,
+          "droneId": "D06",
+          "ground": 30.93831989120978,
+          "stage": 30.969944894539744,
+          "xy": [
+            26.30668968563154,
+            -86.40649757968953
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D06",
+      "time": 8640,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 12",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": true,
+        "mode": "depth",
+        "open": true,
+        "palette": "ironbow",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D02",
+      "time": 10800,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 13",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": true,
+        "mode": "depth",
+        "open": true,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "D02",
+      "time": 10800,
+      "workspace": "drones"
+    },
+    {
+      "check": "reference segment 14",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 10800,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 15",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 10800,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 16",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "history",
+      "selected": "P03",
+      "time": 16200,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 17",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 21600,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 18",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "2D",
+      "scenario": "history",
+      "selected": "V01",
+      "time": 6480,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 19",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "H01",
+      "time": 1404,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 20",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 80,
+        "depot": 5760,
+        "loaded": 240,
+        "onboard": 160,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "H02",
+      "time": 614.63,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 21",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 60,
+        "depot": 5790,
+        "loaded": 210,
+        "onboard": 150,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "H01",
+      "time": 569.615,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 22",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "G01",
+      "time": 6048.000000000001,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 23",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "V01",
+      "time": 1728,
+      "workspace": "response"
+    },
+    {
+      "check": "reference segment 24",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 5,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "E01",
+      "time": 4850,
+      "workspace": "evacuation"
+    },
+    {
+      "check": "reference segment 25",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 10800,
+      "workspace": "incident"
+    },
+    {
+      "check": "reference segment 26",
+      "passed": true,
+      "build": "index-CyLa0Zpt.js",
+      "camera": {
+        "droneId": "D02",
+        "full": false,
+        "mode": "depth",
+        "open": false,
+        "palette": "whitehot",
+        "pitch": 0,
+        "reading": {
+          "depth": 1.6745932195466684,
+          "droneId": "D02",
+          "ground": 11.392638563253918,
+          "stage": 13.254084257836762,
+          "xy": [
+            808.1473851483848,
+            545.9323227270827
+          ]
+        },
+        "sourceKind": "scene-render/model-analysis",
+        "yaw": 0,
+        "zoom": 1
+      },
+      "mission": {
+        "active": 6,
+        "delivered": 330,
+        "depot": 5440,
+        "loaded": 560,
+        "onboard": 230,
+        "personnel": 30
+      },
+      "mode": "3D",
+      "scenario": "history",
+      "selected": "P02",
+      "time": 10800,
+      "workspace": "incident"
+    },
+    {
+      "check": "historical 108mm/h peak uses rg5425 and capped readable rain",
+      "passed": true,
+      "rain": {
+        "cumulativeMm": 6.601319999999998,
+        "gauge": "rg5425",
+        "inputMmH": 108,
+        "visual": {
+          "drawCount": 487,
+          "maximum": 900,
+          "opacity": 0.29733033690392824,
+          "rainMmH": 108,
+          "visualOnly": true
+        }
+      },
+      "scenario": "history",
+      "selected": "P04",
+      "time": 6360
+    },
+    {
+      "check": "historical end has actual model ponding and 19.40046mm single-station rain",
+      "passed": true,
+      "depth": 1.2098487210273838,
+      "gauge": "rg5425",
+      "time": 21600,
+      "total": 19.40046000000008
+    },
+    {
+      "check": "historical actual download preserves model/gauge/mission identity",
+      "passed": true,
+      "modelId": "BELL-RAINFALL-HISTORICAL-03"
+    },
+    {
+      "check": "540px camera fits and scrolls into view",
+      "passed": true,
+      "documentWidth": 525,
+      "scrollWidth": 525,
+      "sceneTop": 0,
+      "sceneBottom": 500,
+      "gimbalBottom": 486.9375,
+      "clipped": false,
+      "build": "index-C872Nuxr.js"
+    }
+  ]
+}

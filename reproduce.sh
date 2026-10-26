@@ -16,4 +16,7 @@ OMP_NUM_THREADS=2 "$RUN_PYTHON" scripts/v3/solve_rain.py --case compound --spaci
 "$RUN_PYTHON" scripts/v3/prepare_operations.py --case historical
 "$RUN_PYTHON" scripts/v3/validate_rain.py
 node scripts/v3/test_operations.mjs
+"$RUN_PYTHON" scripts/v4/prepare_missions.py
+"$RUN_PYTHON" scripts/v4/validate_navigation.py
+node scripts/v4/test_missions.mjs
 ./rebuild.sh

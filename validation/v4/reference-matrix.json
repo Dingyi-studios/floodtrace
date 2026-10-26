@@ -1,0 +1,657 @@
+{
+  "version": "0.4.0",
+  "referenceSegments": 26,
+  "scenarioRuns": 52,
+  "checks": [
+    {
+      "segment": 1,
+      "reference": "00:00–00:05",
+      "floodWorkflow": "三维区域总览",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "3D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 2376,
+          "capture": "compound-01.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 7128,
+          "capture": "historical-01.png"
+        }
+      ]
+    },
+    {
+      "segment": 2,
+      "reference": "00:05–00:11",
+      "floodWorkflow": "初期降雨与积水",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "3D",
+      "action": "district",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 1008,
+          "capture": "compound-02.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 3024.0000000000005,
+          "capture": "historical-02.png"
+        }
+      ]
+    },
+    {
+      "segment": 3,
+      "reference": "00:11–00:19",
+      "floodWorkflow": "关键事件与水流过程",
+      "workspace": "incident",
+      "object": "P03",
+      "view": "3D",
+      "action": "inflow",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P03",
+          "time": 3600,
+          "capture": "compound-03.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P03",
+          "time": 10800,
+          "capture": "historical-03.png"
+        }
+      ]
+    },
+    {
+      "segment": 4,
+      "reference": "00:19–00:22",
+      "floodWorkflow": "六机任务总览",
+      "workspace": "drones",
+      "object": "D01",
+      "view": "3D",
+      "action": "fleet",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D01",
+          "time": 2376,
+          "capture": "compound-04.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D01",
+          "time": 7128,
+          "capture": "historical-04.png"
+        }
+      ]
+    },
+    {
+      "segment": 5,
+      "reference": "00:22–00:26",
+      "floodWorkflow": "边界测绘相机",
+      "workspace": "drones",
+      "object": "D01",
+      "view": "3D",
+      "action": "eo",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D01",
+          "time": 2520,
+          "capture": "compound-05.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D01",
+          "time": 7559.999999999999,
+          "capture": "historical-05.png"
+        }
+      ]
+    },
+    {
+      "segment": 6,
+      "reference": "00:26–00:29",
+      "floodWorkflow": "水深伪彩分析",
+      "workspace": "drones",
+      "object": "D01",
+      "view": "3D",
+      "action": "depth",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D01",
+          "time": 2520,
+          "capture": "compound-06.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D01",
+          "time": 7559.999999999999,
+          "capture": "historical-06.png"
+        }
+      ]
+    },
+    {
+      "segment": 7,
+      "reference": "00:29–00:33",
+      "floodWorkflow": "深水监视",
+      "workspace": "drones",
+      "object": "D02",
+      "view": "3D",
+      "action": "depth",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D02",
+          "time": 2880,
+          "capture": "compound-07.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D02",
+          "time": 8640,
+          "capture": "historical-07.png"
+        }
+      ]
+    },
+    {
+      "segment": 8,
+      "reference": "00:33–00:37",
+      "floodWorkflow": "孤立积水检查",
+      "workspace": "drones",
+      "object": "D03",
+      "view": "3D",
+      "action": "depth",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D03",
+          "time": 3240,
+          "capture": "compound-08.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D03",
+          "time": 9720,
+          "capture": "historical-08.png"
+        }
+      ]
+    },
+    {
+      "segment": 9,
+      "reference": "00:37–00:41",
+      "floodWorkflow": "建筑巡查",
+      "workspace": "drones",
+      "object": "D04",
+      "view": "3D",
+      "action": "eo",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D04",
+          "time": 3024,
+          "capture": "compound-09.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D04",
+          "time": 9072,
+          "capture": "historical-09.png"
+        }
+      ]
+    },
+    {
+      "segment": 10,
+      "reference": "00:41–00:43",
+      "floodWorkflow": "区域普查",
+      "workspace": "drones",
+      "object": "D05",
+      "view": "3D",
+      "action": "eo",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D05",
+          "time": 3600,
+          "capture": "compound-10.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D05",
+          "time": 10800,
+          "capture": "historical-10.png"
+        }
+      ]
+    },
+    {
+      "segment": 11,
+      "reference": "00:43–00:46",
+      "floodWorkflow": "通信中继",
+      "workspace": "drones",
+      "object": "D06",
+      "view": "3D",
+      "action": "eo",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D06",
+          "time": 2880,
+          "capture": "compound-11.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D06",
+          "time": 8640,
+          "capture": "historical-11.png"
+        }
+      ]
+    },
+    {
+      "segment": 12,
+      "reference": "00:46–00:50",
+      "floodWorkflow": "全屏模型观察",
+      "workspace": "drones",
+      "object": "D02",
+      "view": "3D",
+      "action": "full",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D02",
+          "time": 3600,
+          "capture": "compound-12.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D02",
+          "time": 10800,
+          "capture": "historical-12.png"
+        }
+      ]
+    },
+    {
+      "segment": 13,
+      "reference": "00:50–00:53",
+      "floodWorkflow": "灰阶分析色板",
+      "workspace": "drones",
+      "object": "D02",
+      "view": "3D",
+      "action": "whitehot",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "D02",
+          "time": 3600,
+          "capture": "compound-13.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "D02",
+          "time": 10800,
+          "capture": "historical-13.png"
+        }
+      ]
+    },
+    {
+      "segment": 14,
+      "reference": "00:53–00:57",
+      "floodWorkflow": "返回灾情与地面检查",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "3D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 3600,
+          "capture": "compound-14.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 10800,
+          "capture": "historical-14.png"
+        }
+      ]
+    },
+    {
+      "segment": 15,
+      "reference": "00:57–01:02",
+      "floodWorkflow": "二维积水范围",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "2D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 3600,
+          "capture": "compound-15.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 10800,
+          "capture": "historical-15.png"
+        }
+      ]
+    },
+    {
+      "segment": 16,
+      "reference": "01:02–01:09",
+      "floodWorkflow": "二维时间与范围对照",
+      "workspace": "incident",
+      "object": "P03",
+      "view": "2D",
+      "action": "district",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P03",
+          "time": 5400,
+          "capture": "compound-16.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P03",
+          "time": 16200,
+          "capture": "historical-16.png"
+        }
+      ]
+    },
+    {
+      "segment": 17,
+      "reference": "01:09–01:13",
+      "floodWorkflow": "末期退水状态",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "2D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 7200,
+          "capture": "compound-17.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 21600,
+          "capture": "historical-17.png"
+        }
+      ]
+    },
+    {
+      "segment": 18,
+      "reference": "01:13–01:17",
+      "floodWorkflow": "十三资源总览",
+      "workspace": "response",
+      "object": "V01",
+      "view": "2D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "V01",
+          "time": 2160,
+          "capture": "compound-18.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "V01",
+          "time": 6480,
+          "capture": "historical-18.png"
+        }
+      ]
+    },
+    {
+      "segment": 19,
+      "reference": "01:17–01:22",
+      "floodWorkflow": "直升机任务随行",
+      "workspace": "response",
+      "object": "H01",
+      "view": "3D",
+      "action": "follow",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "H01",
+          "time": 468,
+          "capture": "compound-19.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "H01",
+          "time": 1404,
+          "capture": "historical-19.png"
+        }
+      ]
+    },
+    {
+      "segment": 20,
+      "reference": "01:22–01:26",
+      "floodWorkflow": "第二架物资投送",
+      "workspace": "response",
+      "object": "H02",
+      "view": "3D",
+      "action": "delivery",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "H02",
+          "time": 607.314,
+          "capture": "compound-20.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "H02",
+          "time": 614.63,
+          "capture": "historical-20.png"
+        }
+      ]
+    },
+    {
+      "segment": 21,
+      "reference": "01:26–01:30",
+      "floodWorkflow": "返程补给与余量",
+      "workspace": "response",
+      "object": "H01",
+      "view": "3D",
+      "action": "reload",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "H01",
+          "time": 556.295,
+          "capture": "compound-21.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "H01",
+          "time": 569.615,
+          "capture": "historical-21.png"
+        }
+      ]
+    },
+    {
+      "segment": 22,
+      "reference": "01:30–01:34",
+      "floodWorkflow": "地面支援单位",
+      "workspace": "response",
+      "object": "G01",
+      "view": "3D",
+      "action": "follow",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "G01",
+          "time": 2016,
+          "capture": "compound-22.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "G01",
+          "time": 6048.000000000001,
+          "capture": "historical-22.png"
+        }
+      ]
+    },
+    {
+      "segment": 23,
+      "reference": "01:34–01:39",
+      "floodWorkflow": "道路车辆随行",
+      "workspace": "response",
+      "object": "V01",
+      "view": "3D",
+      "action": "follow",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "V01",
+          "time": 576,
+          "capture": "compound-23.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "V01",
+          "time": 1728,
+          "capture": "historical-23.png"
+        }
+      ]
+    },
+    {
+      "segment": 24,
+      "reference": "01:39–01:44",
+      "floodWorkflow": "巡检队与引导交接",
+      "workspace": "evacuation",
+      "object": "T03",
+      "view": "3D",
+      "action": "guidance",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "E03",
+          "time": 1730,
+          "capture": "compound-24.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "E01",
+          "time": 4850,
+          "capture": "historical-24.png"
+        }
+      ]
+    },
+    {
+      "segment": 25,
+      "reference": "01:44–01:47",
+      "floodWorkflow": "返回完整灾情",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "3D",
+      "action": "overview",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 3600,
+          "capture": "compound-25.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 10800,
+          "capture": "historical-25.png"
+        }
+      ]
+    },
+    {
+      "segment": 26,
+      "reference": "01:47–01:55",
+      "floodWorkflow": "流场与全景收尾",
+      "workspace": "incident",
+      "object": "P02",
+      "view": "3D",
+      "action": "flow",
+      "cases": [
+        {
+          "scenario": "surface",
+          "passed": true,
+          "selected": "P02",
+          "time": 3600,
+          "capture": "compound-26.png"
+        },
+        {
+          "scenario": "history",
+          "passed": true,
+          "selected": "P02",
+          "time": 10800,
+          "capture": "historical-26.png"
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ class Handler(SimpleHTTPRequestHandler):
     def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT/'app/dist'),**kwargs)
     def do_GET(self):
         if self.path=='/health':
-            body=json.dumps({'status':'ok','application':'FloodTrace','version':'0.3.0','root':str(ROOT)}).encode()
+            body=json.dumps({'status':'ok','application':'FloodTrace','version':json.loads((ROOT/'app/package.json').read_text())['version'],'root':str(ROOT)}).encode()
             self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
         else:super().do_GET()
     def end_headers(self):

@@ -61,3 +61,12 @@ validation/v3/*
 !validation/v3/data-checks.json
 !validation/v3/operations-checks.json
 !validation/v3/browser-checks.json
+
+# V0.4 compact acceptance records; full captures remain on SSD.
+!validation/v4/
+validation/v4/*
+!validation/v4/mission-checks.json
+!validation/v4/navigation-checks.json
+!validation/v4/browser-checks.json
+!validation/v4/performance-checks.json
+!validation/v4/reference-matrix.json

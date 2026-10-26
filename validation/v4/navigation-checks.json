@@ -1,0 +1,140 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "case": "compound",
+      "check": "independent 2m segment water/depth/speed and boat obstacle checks",
+      "passed": true,
+      "resources": [
+        {
+          "id": "V01",
+          "sampleCount": 582,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "V02",
+          "sampleCount": 358,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "V03",
+          "sampleCount": 39,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "G01",
+          "sampleCount": 291,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "G02",
+          "sampleCount": 179,
+          "maxDepth": 0.007958205904695205,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "B01",
+          "sampleCount": 990,
+          "maxDepth": 6.218998003005982,
+          "minDepth": 2.0956049861729142,
+          "maxSpeed": 1.9123918312914614
+        },
+        {
+          "id": "B02",
+          "sampleCount": 990,
+          "maxDepth": 8.350474796259405,
+          "minDepth": 2.3293734277337785,
+          "maxSpeed": 1.9943311439138935
+        }
+      ]
+    },
+    {
+      "case": "compound",
+      "check": "each detection matches model field at recorded place/time",
+      "passed": true,
+      "count": 18
+    },
+    {
+      "case": "compound",
+      "check": "model identity and minimum terrain-relative AGL65m",
+      "passed": true
+    },
+    {
+      "case": "historical",
+      "check": "independent 2m segment water/depth/speed and boat obstacle checks",
+      "passed": true,
+      "resources": [
+        {
+          "id": "V01",
+          "sampleCount": 556,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "V02",
+          "sampleCount": 762,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "V03",
+          "sampleCount": 39,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "G01",
+          "sampleCount": 278,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "G02",
+          "sampleCount": 381,
+          "maxDepth": 0,
+          "minDepth": 0.0,
+          "maxSpeed": 0
+        },
+        {
+          "id": "B01",
+          "sampleCount": 990,
+          "maxDepth": 2.1981116854254403,
+          "minDepth": 0.4773409682607651,
+          "maxSpeed": 0.4456588231983701
+        },
+        {
+          "id": "B02",
+          "sampleCount": 990,
+          "maxDepth": 1.8640172485017776,
+          "minDepth": 0.4274220104211569,
+          "maxSpeed": 0.21888335647777357
+        }
+      ]
+    },
+    {
+      "case": "historical",
+      "check": "each detection matches model field at recorded place/time",
+      "passed": true,
+      "count": 16
+    },
+    {
+      "case": "historical",
+      "check": "model identity and minimum terrain-relative AGL65m",
+      "passed": true
+    }
+  ]
+}
