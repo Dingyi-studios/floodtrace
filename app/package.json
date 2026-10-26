@@ -1,12 +1,13 @@
 {
   "name": "floodtrace-bellinge",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5179 --strictPort",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1 --port 5178 --strictPort"
+    "preview": "vite preview --host 127.0.0.1 --port 5178 --strictPort",
+    "build:vps": "vite build --base=/floodtrace/ --outDir=dist-vps"
   },
   "dependencies": {
     "three": "0.180.0",

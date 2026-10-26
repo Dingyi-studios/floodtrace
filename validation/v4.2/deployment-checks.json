@@ -1,0 +1,51 @@
+{
+  "version": "0.4.2",
+  "url": "https://realkk.icu/floodtrace/",
+  "verifiedAt": "2026-10-26T11:46:18.912Z",
+  "tlsVerified": true,
+  "serverFilesVerified": 35,
+  "httpsFiles": 35,
+  "allHttpsStatuses": 200,
+  "allContentLengthsMatch": true,
+  "browser": {
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "Public HTTPS app and station notes",
+        "passed": true
+      },
+      {
+        "name": "Public V01 movement and camera following",
+        "passed": true
+      },
+      {
+        "name": "Public historical field, station inventory and rewind",
+        "passed": true
+      },
+      {
+        "name": "Data, water, risk and terrain texture use deployment prefix",
+        "passed": true
+      },
+      {
+        "name": "No browser console errors on public deployment",
+        "passed": true
+      }
+    ]
+  },
+  "pathTestsPassed": true,
+  "missionRegressionChecks": 6,
+  "assemblyRegressionChecks": 10,
+  "builds": [
+    "root",
+    "/floodtrace/"
+  ],
+  "rootBuild": "index-D6wZGU86.js",
+  "vpsBuild": "index-Ce-nDDws.js",
+  "originalSiteFilesUnchanged": true,
+  "webServerConfigurationUnchanged": true,
+  "originalRunningContainers": 4,
+  "newServerProcesses": 0,
+  "newListeningPorts": 0,
+  "bundleSha256": "5603ba339b2db20d30755e1fce1e4384696e7dc47c378ba81ad51127789dc106"
+}

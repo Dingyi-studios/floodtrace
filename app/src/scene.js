@@ -1,3 +1,4 @@
+import{assetUrl}from'./asset-url.js';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
@@ -40,7 +41,7 @@ export class FloodScene{
   for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){positions.push(bounds[0]+c/(cols-1)*(bounds[2]-bounds[0])-origin[0],heights[r*cols+c],origin[1]-bounds[3]+r/(rows-1)*(bounds[3]-bounds[1]));uv.push(c/(cols-1),1-r/(rows-1))}
   for(let r=0;r<rows-1;r++)for(let c=0;c<cols-1;c++){const a=r*cols+c;indices.push(a,a+cols,a+1,a+1,a+cols,a+cols+1)}
   const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geo.setIndex(indices);geo.computeVertexNormals();
-  const tex=new THREE.TextureLoader().load('/data/city-ground.jpg');tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=8;
+  const tex=new THREE.TextureLoader().load(assetUrl('/data/city-ground.jpg'));tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=8;
   this.terrain=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({map:tex,roughness:1,color:'#e7eddf'}));this.terrain.receiveShadow=true;
   this.world.add(this.terrain);this.layers.terrain=new THREE.Group();
   const skirtP=[],skirtI=[];let edge=[];

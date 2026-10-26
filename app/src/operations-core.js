@@ -1,3 +1,4 @@
+import{assetUrl}from'./asset-url.js';
 export const PEOPLE_STATUS=['待疏散','疏散途中','已到达','受阻待援'];
 export const PATROL_STATUS={1:'安全区巡查',2:'检查安全边界',3:'集结点引导',4:'返回集结点'};
 export function sampleTrack(track,time){
@@ -13,7 +14,7 @@ export function sampleOperations(plan,time){
  return{time,counts,occupancy,reserved,groups,patrols,total:Object.values(counts).reduce((a,b)=>a+b,0)};
 }
 export async function loadOperations(url){
- const plan=await fetch(url).then(r=>{if(!r.ok)throw Error('疏散数据未就绪');return r.json()});
- const bytes=await fetch(plan.risk.url).then(r=>{if(!r.ok)throw Error('安全分区未就绪');return r.arrayBuffer()});
+ const plan=await fetch(assetUrl(url)).then(r=>{if(!r.ok)throw Error('疏散数据未就绪');return r.json()});
+ const bytes=await fetch(assetUrl(plan.risk.url)).then(r=>{if(!r.ok)throw Error('安全分区未就绪');return r.arrayBuffer()});
  if(bytes.byteLength!==plan.risk.cols*plan.risk.rows*plan.risk.frames)throw Error('安全分区帧大小错误');plan.riskData=new Uint8Array(bytes);return plan;
 }

@@ -2,9 +2,11 @@
 
 **城市雨洪、无人机侦察与应急行动 · Urban flood analysis & response sandbox**
 
-个人研究项目，当前版本 **v0.4.1**。使用真实 Bellinge 空间资料、独立水动力求解和三维回放，把灾情、监测、侦察、资源与人员疏散放在同一片场景中检查。
+个人研究项目，当前版本 **v0.4.2**。使用真实 Bellinge 空间资料、独立水动力求解和三维回放，把灾情、监测、侦察、资源与人员疏散放在同一片场景中检查。
 
 ![模型水深分析与模拟无人机侦察](docs/images/floodtrace-v0.4-recon.png)
+
+在线演示：**[打开 FloodTrace](https://realkk.icu/floodtrace/)** · [VPS部署说明](docs/DEPLOYMENT-VPS.md)
 
 ## v0.4.1 修复
 

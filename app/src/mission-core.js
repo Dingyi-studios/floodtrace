@@ -1,3 +1,4 @@
+import{assetUrl}from'./asset-url.js';
 /** All operational state is a pure function of model seconds. No wall clock writes. */
 export const MISSION_STATUS={standby:'待命',loading:'装载中',outbound:'前往任务点',delivering:'物资投送',returning:'返程',reloading:'补给中',complete:'任务完成',blocked:'受阻停驶',checking:'现场检查',patrolling:'巡查中',guiding:'集结点引导',supplying:'物资保障',mapping:'边界测绘',surveying:'任务飞行'};
 export const RESOURCE_TYPE={helicopter:'直升机',boat:'救援舟艇',vehicle:'抢险车辆',patrol:'安全巡检',crew:'救援队伍',depot:'补给站'};
@@ -18,4 +19,4 @@ export function missionSeries(plan,id,field){
  const data=times.map(t=>{const s=sampleMission(plan,t),o=[...s.drones,...s.resources].find(d=>d.id===id);return{t,o,s,depth:source&&field?field.sampleFrame(...source.target,Math.min(field.grid.frames-1,Math.round(t/field.meta.step)))?.depth:null}});
  return{altitude:data.map(d=>({t:d.t,value:d.o.agl})),battery:data.map(d=>({t:d.t,value:d.o.battery??0})),depth:data.map(d=>({t:d.t,value:d.depth})),payload:data.map(d=>({t:d.t,value:d.o.payload})),delivered:data.map(d=>({t:d.t,value:d.s.totals.delivered})),personnel:data.map(d=>({t:d.t,value:d.s.totals.personnel})),active:data.map(d=>({t:d.t,value:d.s.totals.active}))};
 }
-export async function loadMissionPlan(url){const r=await fetch(url);if(!r.ok)throw Error('侦察与资源资料加载失败，请重试');const p=await r.json();if(p.schemaVersion!==1||p.drones?.length!==6||p.resources?.length!==13||!p.modelId)throw Error('侦察与资源资料版本不匹配');return p}
+export async function loadMissionPlan(url){const r=await fetch(assetUrl(url));if(!r.ok)throw Error('侦察与资源资料加载失败，请重试');const p=await r.json();if(p.schemaVersion!==1||p.drones?.length!==6||p.resources?.length!==13||!p.modelId)throw Error('侦察与资源资料版本不匹配');return p}

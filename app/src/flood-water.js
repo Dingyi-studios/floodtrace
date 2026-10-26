@@ -1,9 +1,10 @@
+import{assetUrl}from'./asset-url.js';
 import * as THREE from 'three';
 import {sampleGrid,advectRK2} from './flow-core.js';
 
 export async function loadUrbanModel(url='/data/compound.json'){
- const meta=await fetch(url).then(r=>{if(!r.ok)throw Error('城市洪水结果尚未就绪');return r.json()});
- const [field,ground,mask]=await Promise.all([meta.grid.fields_url,meta.grid.ground_url,meta.grid.building_mask_url].map(u=>fetch(u).then(r=>{if(!r.ok)throw Error('洪水资源加载失败 '+u);return r.arrayBuffer()})));
+ const meta=await fetch(assetUrl(url)).then(r=>{if(!r.ok)throw Error('城市洪水结果尚未就绪');return r.json()});
+ const [field,ground,mask]=await Promise.all([meta.grid.fields_url,meta.grid.ground_url,meta.grid.building_mask_url].map(u=>fetch(assetUrl(u)).then(r=>{if(!r.ok)throw Error('洪水资源加载失败 '+u);return r.arrayBuffer()})));
  const n=meta.grid.count,frames=meta.grid.frames;
  if(field.byteLength!==n*frames*4*4)throw Error('洪水结果帧大小校验失败');
  meta.fields=new Float32Array(field);meta.ground=new Float32Array(ground);meta.buildingMask=new Uint8Array(mask);

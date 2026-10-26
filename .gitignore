@@ -76,3 +76,9 @@ validation/v4/*
 validation/v4.1/*
 !validation/v4.1/assembly-checks.json
 !validation/v4.1/browser-checks.json
+
+# Optional subdirectory build for the personal VPS
+app/dist-vps/
+!validation/v4.2/
+validation/v4.2/*
+!validation/v4.2/deployment-checks.json
