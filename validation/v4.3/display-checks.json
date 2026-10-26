@@ -1,0 +1,26 @@
+{
+  "version": "0.4.3",
+  "passed": 4,
+  "failed": 0,
+  "mappedTracks": 46,
+  "outerTrackSamples": 1235,
+  "totalTrackSamples": 2346,
+  "checks": [
+    {
+      "name": "rain density visible at positive rates, capped at extremes, dry/off/zero visual strength remain zero",
+      "passed": true
+    },
+    {
+      "name": "camera image and wrapped controls fit five map sizes, normal and expanded",
+      "passed": true
+    },
+    {
+      "name": "source river tracks reach full map and stay on mapped geometry; core domain remains 1600m",
+      "passed": true
+    },
+    {
+      "name": "outer illustrative context does not turn outside coordinates into model samples",
+      "passed": true
+    }
+  ]
+}

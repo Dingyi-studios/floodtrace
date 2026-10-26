@@ -1,0 +1,5 @@
+/** Cartographic flow tracks outside the calculated city domain, for visual context only. */
+export function makeContextTracks(watercourses){return watercourses.map(r=>{const distances=[0];for(let i=1;i<r.points.length;i++)distances.push(distances.at(-1)+Math.hypot(r.points[i][0]-r.points[i-1][0],r.points[i][1]-r.points[i-1][1]));return{points:r.points,distances,length:distances.at(-1),sourceId:r.id}}).filter(r=>r.length>8)}
+export function trackPoint(track,distance){const d=Math.max(0,Math.min(track.length,distance));let lo=0,hi=track.distances.length-1;while(lo<hi){const mid=Math.ceil((lo+hi)/2);if(track.distances[mid]<=d)lo=mid;else hi=mid-1}const i=Math.min(lo,track.points.length-2),a=track.points[i],b=track.points[i+1],span=track.distances[i+1]-track.distances[i],u=span?(d-track.distances[i])/span:0;return[a[0]+(b[0]-a[0])*u,a[1]+(b[1]-a[1])*u]}
+export function insideBounds(x,z,b){return x>=b[0]&&z>=b[1]&&x<=b[2]&&z<=b[3]}
+export function localMapBounds(data){return[data.bounds[0]-data.origin[0],data.origin[1]-data.bounds[3],data.bounds[2]-data.origin[0],data.origin[1]-data.bounds[1]]}

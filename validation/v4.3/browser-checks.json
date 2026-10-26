@@ -1,0 +1,1512 @@
+{
+  "version": "0.4.3",
+  "verifiedAt": "2026-10-26T12:58:55.408Z",
+  "build": "index-CgaB3D7X.js",
+  "earlierLayoutBuild": "index-CStnDc_N.js",
+  "scrollMethod": "native wheel/mouse input; no locator centering during measured click",
+  "passed": 21,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "PiP controls fit 1440x960",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 571.5,
+            "height": 23,
+            "left": 524.40625,
+            "name": "EO 可见光",
+            "right": 574.2109375,
+            "top": 548.5,
+            "width": 49.8046875
+          },
+          {
+            "bottom": 571.5,
+            "height": 23,
+            "left": 577.2109375,
+            "name": "水深",
+            "right": 605.2109375,
+            "top": 548.5,
+            "width": 28
+          },
+          {
+            "bottom": 571.5,
+            "height": 23,
+            "left": 608.2109375,
+            "name": "风险",
+            "right": 636.2109375,
+            "top": 548.5,
+            "width": 28
+          },
+          {
+            "bottom": 570.5,
+            "height": 21,
+            "left": 639.2109375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 729.2109375,
+            "top": 549.5,
+            "width": 90
+          },
+          {
+            "bottom": 570.5,
+            "height": 21,
+            "left": 732.2109375,
+            "name": "−",
+            "right": 749.4609375,
+            "top": 549.5,
+            "width": 17.25
+          },
+          {
+            "bottom": 571.5,
+            "height": 23,
+            "left": 1106.8671875,
+            "name": "＋",
+            "right": 1126.8671875,
+            "top": 548.5,
+            "width": 20
+          },
+          {
+            "bottom": 571.25,
+            "height": 22.5,
+            "left": 1129.8671875,
+            "name": "⛶",
+            "right": 1148.40625,
+            "top": 548.75,
+            "width": 18.5390625
+          },
+          {
+            "bottom": 592.5,
+            "height": 3,
+            "left": 566.40625,
+            "name": "云台偏航",
+            "right": 661.40625,
+            "top": 589.5,
+            "width": 95
+          },
+          {
+            "bottom": 592.5,
+            "height": 3,
+            "left": 845.40625,
+            "name": "云台俯仰",
+            "right": 940.40625,
+            "top": 589.5,
+            "width": 95
+          },
+          {
+            "bottom": 597.5,
+            "height": 13,
+            "left": 1117.40625,
+            "name": "复位",
+            "right": 1145.40625,
+            "top": 584.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 700,
+          "height": 642,
+          "left": 0,
+          "right": 1166.40625,
+          "top": 58,
+          "width": 1166.40625
+        },
+        "panel": {
+          "bottom": 606,
+          "height": 492,
+          "left": 516.40625,
+          "right": 1156.40625,
+          "top": 114,
+          "width": 640
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "PiP controls fit 1150x720",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 350.8046875,
+            "name": "EO 可见光",
+            "right": 396.609375,
+            "top": 392.5,
+            "width": 45.8046875
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 399.609375,
+            "name": "水深",
+            "right": 423.609375,
+            "top": 392.5,
+            "width": 24
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 426.609375,
+            "name": "风险",
+            "right": 450.609375,
+            "top": 392.5,
+            "width": 24
+          },
+          {
+            "bottom": 414.5,
+            "height": 21,
+            "left": 453.609375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 543.609375,
+            "top": 393.5,
+            "width": 90
+          },
+          {
+            "bottom": 414.5,
+            "height": 21,
+            "left": 546.609375,
+            "name": "−",
+            "right": 559.859375,
+            "top": 393.5,
+            "width": 13.25
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 830.4609375,
+            "name": "＋",
+            "right": 846.4609375,
+            "top": 392.5,
+            "width": 16
+          },
+          {
+            "bottom": 415.25,
+            "height": 22.5,
+            "left": 849.4609375,
+            "name": "⛶",
+            "right": 864,
+            "top": 392.75,
+            "width": 14.5390625
+          },
+          {
+            "bottom": 436.5,
+            "height": 3,
+            "left": 392.8046875,
+            "name": "云台偏航",
+            "right": 487.8046875,
+            "top": 433.5,
+            "width": 95
+          },
+          {
+            "bottom": 436.5,
+            "height": 3,
+            "left": 616.3984375,
+            "name": "云台俯仰",
+            "right": 711.3984375,
+            "top": 433.5,
+            "width": 95
+          },
+          {
+            "bottom": 441.5,
+            "height": 13,
+            "left": 833,
+            "name": "复位",
+            "right": 861,
+            "top": 428.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 460,
+          "height": 402,
+          "left": 0,
+          "right": 882,
+          "top": 58,
+          "width": 882
+        },
+        "panel": {
+          "bottom": 450,
+          "height": 336,
+          "left": 342.8046875,
+          "right": 872,
+          "top": 114,
+          "width": 529.1953125
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "PiP controls fit 950x700",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 395.5,
+            "height": 23,
+            "left": 270.8046875,
+            "name": "EO 可见光",
+            "right": 316.609375,
+            "top": 372.5,
+            "width": 45.8046875
+          },
+          {
+            "bottom": 395.5,
+            "height": 23,
+            "left": 319.609375,
+            "name": "水深",
+            "right": 343.609375,
+            "top": 372.5,
+            "width": 24
+          },
+          {
+            "bottom": 395.5,
+            "height": 23,
+            "left": 346.609375,
+            "name": "风险",
+            "right": 370.609375,
+            "top": 372.5,
+            "width": 24
+          },
+          {
+            "bottom": 394.5,
+            "height": 21,
+            "left": 373.609375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 463.609375,
+            "top": 373.5,
+            "width": 90
+          },
+          {
+            "bottom": 394.5,
+            "height": 21,
+            "left": 466.609375,
+            "name": "−",
+            "right": 479.859375,
+            "top": 373.5,
+            "width": 13.25
+          },
+          {
+            "bottom": 395.5,
+            "height": 23,
+            "left": 630.4609375,
+            "name": "＋",
+            "right": 646.4609375,
+            "top": 372.5,
+            "width": 16
+          },
+          {
+            "bottom": 395.25,
+            "height": 22.5,
+            "left": 649.4609375,
+            "name": "⛶",
+            "right": 664,
+            "top": 372.75,
+            "width": 14.5390625
+          },
+          {
+            "bottom": 416.5,
+            "height": 3,
+            "left": 312.8046875,
+            "name": "云台偏航",
+            "right": 407.8046875,
+            "top": 413.5,
+            "width": 95
+          },
+          {
+            "bottom": 416.5,
+            "height": 3,
+            "left": 476.3984375,
+            "name": "云台俯仰",
+            "right": 571.3984375,
+            "top": 413.5,
+            "width": 95
+          },
+          {
+            "bottom": 421.5,
+            "height": 13,
+            "left": 633,
+            "name": "复位",
+            "right": 661,
+            "top": 408.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 440,
+          "height": 382,
+          "left": 0,
+          "right": 682,
+          "top": 58,
+          "width": 682
+        },
+        "panel": {
+          "bottom": 430,
+          "height": 316,
+          "left": 262.8046875,
+          "right": 672,
+          "top": 114,
+          "width": 409.1953125
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "PiP controls fit 800x600",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 375.5,
+            "height": 23,
+            "left": 18,
+            "name": "EO 可见光",
+            "right": 63.8046875,
+            "top": 352.5,
+            "width": 45.8046875
+          },
+          {
+            "bottom": 375.5,
+            "height": 23,
+            "left": 66.8046875,
+            "name": "水深",
+            "right": 90.8046875,
+            "top": 352.5,
+            "width": 24
+          },
+          {
+            "bottom": 375.5,
+            "height": 23,
+            "left": 93.8046875,
+            "name": "风险",
+            "right": 117.8046875,
+            "top": 352.5,
+            "width": 24
+          },
+          {
+            "bottom": 374.5,
+            "height": 21,
+            "left": 120.8046875,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 210.8046875,
+            "top": 353.5,
+            "width": 90
+          },
+          {
+            "bottom": 374.5,
+            "height": 21,
+            "left": 213.8046875,
+            "name": "−",
+            "right": 227.0546875,
+            "top": 353.5,
+            "width": 13.25
+          },
+          {
+            "bottom": 375.5,
+            "height": 23,
+            "left": 465.4609375,
+            "name": "＋",
+            "right": 481.4609375,
+            "top": 352.5,
+            "width": 16
+          },
+          {
+            "bottom": 375.25,
+            "height": 22.5,
+            "left": 484.4609375,
+            "name": "⛶",
+            "right": 499,
+            "top": 352.75,
+            "width": 14.5390625
+          },
+          {
+            "bottom": 396.5,
+            "height": 3,
+            "left": 60,
+            "name": "云台偏航",
+            "right": 155,
+            "top": 393.5,
+            "width": 95
+          },
+          {
+            "bottom": 396.5,
+            "height": 3,
+            "left": 267.5,
+            "name": "云台俯仰",
+            "right": 362.5,
+            "top": 393.5,
+            "width": 95
+          },
+          {
+            "bottom": 401.5,
+            "height": 13,
+            "left": 468,
+            "name": "复位",
+            "right": 496,
+            "top": 388.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 420,
+          "height": 320,
+          "left": 0,
+          "right": 517,
+          "top": 100,
+          "width": 517
+        },
+        "panel": {
+          "bottom": 410,
+          "height": 250,
+          "left": 10,
+          "right": 507,
+          "top": 160,
+          "width": 497
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "PiP controls fit 540x774",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 555,
+            "height": 22,
+            "left": 18,
+            "name": "EO 可见光",
+            "right": 59.234375,
+            "top": 533,
+            "width": 41.234375
+          },
+          {
+            "bottom": 555,
+            "height": 22,
+            "left": 62.234375,
+            "name": "水深",
+            "right": 84.234375,
+            "top": 533,
+            "width": 22
+          },
+          {
+            "bottom": 555,
+            "height": 22,
+            "left": 87.234375,
+            "name": "风险",
+            "right": 109.234375,
+            "top": 533,
+            "width": 22
+          },
+          {
+            "bottom": 554.25,
+            "height": 20.5,
+            "left": 112.234375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 202.234375,
+            "top": 533.75,
+            "width": 90
+          },
+          {
+            "bottom": 554.25,
+            "height": 20.5,
+            "left": 205.234375,
+            "name": "−",
+            "right": 217.875,
+            "top": 533.75,
+            "width": 12.640625
+          },
+          {
+            "bottom": 555,
+            "height": 22,
+            "left": 475.2734375,
+            "name": "＋",
+            "right": 490.2734375,
+            "top": 533,
+            "width": 15
+          },
+          {
+            "bottom": 554.75,
+            "height": 21.5,
+            "left": 493.2734375,
+            "name": "⛶",
+            "right": 507,
+            "top": 533.25,
+            "width": 13.7265625
+          },
+          {
+            "bottom": 576.5,
+            "height": 3,
+            "left": 60,
+            "name": "云台偏航",
+            "right": 155,
+            "top": 573.5,
+            "width": 95
+          },
+          {
+            "bottom": 576.5,
+            "height": 3,
+            "left": 271.5,
+            "name": "云台俯仰",
+            "right": 366.5,
+            "top": 573.5,
+            "width": 95
+          },
+          {
+            "bottom": 581.5,
+            "height": 13,
+            "left": 476,
+            "name": "复位",
+            "right": 504,
+            "top": 568.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 600,
+          "height": 500,
+          "left": 0,
+          "right": 525,
+          "top": 100,
+          "width": 525
+        },
+        "panel": {
+          "bottom": 590,
+          "height": 377,
+          "left": 10,
+          "right": 515,
+          "top": 213,
+          "width": 505
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "eo",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "PiP modes, palette and full/restore retain selection",
+      "pass": true,
+      "full": {
+        "controls": [
+          {
+            "bottom": 397,
+            "height": 22,
+            "left": 16,
+            "name": "EO 可见光",
+            "right": 57.234375,
+            "top": 375,
+            "width": 41.234375
+          },
+          {
+            "bottom": 397,
+            "height": 22,
+            "left": 60.234375,
+            "name": "水深",
+            "right": 82.234375,
+            "top": 375,
+            "width": 22
+          },
+          {
+            "bottom": 397,
+            "height": 22,
+            "left": 85.234375,
+            "name": "风险",
+            "right": 107.234375,
+            "top": 375,
+            "width": 22
+          },
+          {
+            "bottom": 396.25,
+            "height": 20.5,
+            "left": 110.234375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 200.234375,
+            "top": 375.75,
+            "width": 90
+          },
+          {
+            "bottom": 396.25,
+            "height": 20.5,
+            "left": 203.234375,
+            "name": "−",
+            "right": 215.875,
+            "top": 375.75,
+            "width": 12.640625
+          },
+          {
+            "bottom": 397,
+            "height": 22,
+            "left": 477.2734375,
+            "name": "＋",
+            "right": 492.2734375,
+            "top": 375,
+            "width": 15
+          },
+          {
+            "bottom": 396.75,
+            "height": 21.5,
+            "left": 495.2734375,
+            "name": "⛶",
+            "right": 509,
+            "top": 375.25,
+            "width": 13.7265625
+          },
+          {
+            "bottom": 420,
+            "height": 3,
+            "left": 58,
+            "name": "云台偏航",
+            "right": 153,
+            "top": 417,
+            "width": 95
+          },
+          {
+            "bottom": 420,
+            "height": 3,
+            "left": 271.5,
+            "name": "云台俯仰",
+            "right": 366.5,
+            "top": 417,
+            "width": 95
+          },
+          {
+            "bottom": 425,
+            "height": 13,
+            "left": 478,
+            "name": "复位",
+            "right": 506,
+            "top": 412,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 443,
+          "height": 500,
+          "left": 0,
+          "right": 525,
+          "top": -57,
+          "width": 525
+        },
+        "panel": {
+          "bottom": 435,
+          "height": 484,
+          "left": 8,
+          "right": 517,
+          "top": -49,
+          "width": 509
+        },
+        "state": {
+          "droneId": "D01",
+          "full": true,
+          "mode": "depth",
+          "open": true,
+          "palette": "whitehot",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      },
+      "pip": {
+        "controls": [
+          {
+            "bottom": 399,
+            "height": 22,
+            "left": 18,
+            "name": "EO 可见光",
+            "right": 59.234375,
+            "top": 377,
+            "width": 41.234375
+          },
+          {
+            "bottom": 399,
+            "height": 22,
+            "left": 62.234375,
+            "name": "水深",
+            "right": 84.234375,
+            "top": 377,
+            "width": 22
+          },
+          {
+            "bottom": 399,
+            "height": 22,
+            "left": 87.234375,
+            "name": "风险",
+            "right": 109.234375,
+            "top": 377,
+            "width": 22
+          },
+          {
+            "bottom": 398.25,
+            "height": 20.5,
+            "left": 112.234375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 202.234375,
+            "top": 377.75,
+            "width": 90
+          },
+          {
+            "bottom": 398.25,
+            "height": 20.5,
+            "left": 205.234375,
+            "name": "−",
+            "right": 217.875,
+            "top": 377.75,
+            "width": 12.640625
+          },
+          {
+            "bottom": 399,
+            "height": 22,
+            "left": 475.2734375,
+            "name": "＋",
+            "right": 490.2734375,
+            "top": 377,
+            "width": 15
+          },
+          {
+            "bottom": 398.75,
+            "height": 21.5,
+            "left": 493.2734375,
+            "name": "⛶",
+            "right": 507,
+            "top": 377.25,
+            "width": 13.7265625
+          },
+          {
+            "bottom": 420.5,
+            "height": 3,
+            "left": 60,
+            "name": "云台偏航",
+            "right": 155,
+            "top": 417.5,
+            "width": 95
+          },
+          {
+            "bottom": 420.5,
+            "height": 3,
+            "left": 271.5,
+            "name": "云台俯仰",
+            "right": 366.5,
+            "top": 417.5,
+            "width": 95
+          },
+          {
+            "bottom": 425.5,
+            "height": 13,
+            "left": 476,
+            "name": "复位",
+            "right": 504,
+            "top": 412.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 444,
+          "height": 500,
+          "left": 0,
+          "right": 525,
+          "top": -56,
+          "width": 525
+        },
+        "panel": {
+          "bottom": 434,
+          "height": 377,
+          "left": 10,
+          "right": 515,
+          "top": 57,
+          "width": 505
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "depth",
+          "open": true,
+          "palette": "whitehot",
+          "pitch": 0,
+          "reading": {
+            "depth": 0,
+            "droneId": "D01",
+            "ground": 21.879029980048085,
+            "stage": 22.009679787627,
+            "xy": [
+              848.1087087588097,
+              -54.04493043441889
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "Final build drone list retains nested and outer position",
+      "pass": true,
+      "before": {
+        "list": 84,
+        "root": 0,
+        "rowTop": 445.6953125,
+        "selected": "D01"
+      },
+      "after": {
+        "list": 84,
+        "root": 0,
+        "rowTop": 445.6953125,
+        "selected": "D06"
+      }
+    },
+    {
+      "name": "Final build response list retains bottom rows",
+      "pass": true,
+      "before": {
+        "list": 408,
+        "root": 164,
+        "rowTop": 406.1953125,
+        "selected": "B01"
+      },
+      "after": {
+        "list": 408,
+        "root": 164,
+        "rowTop": 406.1953125,
+        "selected": "B02"
+      }
+    },
+    {
+      "name": "Final incident list keeps visible row",
+      "pass": true,
+      "before": {
+        "root": 228.5,
+        "rowTop": 290,
+        "selected": "G71F05R"
+      },
+      "after": {
+        "root": 228.5,
+        "rowTop": 290,
+        "selected": "G71F04R"
+      }
+    },
+    {
+      "name": "Final monitor list keeps visible row",
+      "pass": true,
+      "before": {
+        "root": 98.5,
+        "rowTop": 290,
+        "selected": "G72F040"
+      },
+      "after": {
+        "root": 98.5,
+        "rowTop": 290,
+        "selected": "G73F010"
+      }
+    },
+    {
+      "name": "Final evacuation list keeps visible row",
+      "pass": true,
+      "before": {
+        "root": 1605,
+        "rowTop": 297.0859375,
+        "selected": "E18"
+      },
+      "after": {
+        "root": 1605,
+        "rowTop": 297.0859375,
+        "selected": "E17"
+      }
+    },
+    {
+      "name": "Dry time stays dry; visible rain shortcut reaches true rain peak",
+      "pass": true,
+      "dry": {
+        "button": true,
+        "hit": true,
+        "rain": {
+          "cumulativeMm": 36.458333333333336,
+          "gauge": "hypothetical",
+          "inputMmH": 0,
+          "visual": {
+            "drawCount": 0,
+            "maximum": 900,
+            "opacity": 0.25,
+            "rainMmH": 0,
+            "screenSpace": true,
+            "streakLengthPx": [
+              7,
+              15
+            ],
+            "visualOnly": true
+          }
+        },
+        "time": 7200
+      },
+      "wet": {
+        "drops": [
+          0.7508537769317627,
+          -1.0123244524002075,
+          0,
+          0.754891574382782,
+          -1.0525927543640137,
+          0,
+          -0.5073169469833374,
+          -0.9013324975967408,
+          0,
+          -0.50291508436203,
+          -0.945232093334198,
+          0
+        ],
+        "field": [
+          39.83905029296875,
+          0,
+          0,
+          0,
+          39.93307113647461,
+          0,
+          0,
+          0,
+          39.44305038452149,
+          0,
+          0,
+          0,
+          39.4144172668457,
+          0,
+          0,
+          0,
+          39.34737777709961,
+          0,
+          0,
+          0
+        ],
+        "playing": false,
+        "rain": {
+          "cumulativeMm": 15.243055555555552,
+          "gauge": "hypothetical",
+          "inputMmH": 59.16666666666667,
+          "visual": {
+            "drawCount": 313,
+            "maximum": 900,
+            "opacity": 0.384590344885452,
+            "rainMmH": 59.16666666666667,
+            "screenSpace": true,
+            "streakLengthPx": [
+              7,
+              15
+            ],
+            "visualOnly": true
+          }
+        },
+        "time": 2130
+      }
+    },
+    {
+      "name": "Paused model stays fixed while rain visual phase falls",
+      "pass": true
+    },
+    {
+      "name": "Rain layer switch hides and restores streaks",
+      "pass": true
+    },
+    {
+      "name": "Historical rain peak is visible and population remains 360",
+      "pass": true,
+      "detail": {
+        "context": {
+          "active": 235,
+          "directionSource": "source polyline order; illustrative, not model velocity",
+          "displayBounds": [
+            581900,
+            6132000,
+            585300,
+            6134700
+          ],
+          "mappedTracks": 46,
+          "modelBounds": [
+            583000,
+            6132100,
+            584600,
+            6133700
+          ],
+          "source": "mapped watercourses and lakes",
+          "visualOnly": true
+        },
+        "ops": 360,
+        "outside": null,
+        "rain": {
+          "cumulativeMm": 7.501319999999998,
+          "gauge": "rg5425",
+          "inputMmH": 108,
+          "visual": {
+            "drawCount": 498,
+            "maximum": 900,
+            "opacity": 0.3976444149152308,
+            "rainMmH": 108,
+            "screenSpace": true,
+            "streakLengthPx": [
+              7,
+              15
+            ],
+            "visualOnly": true
+          }
+        },
+        "target": [
+          -139.20000000000002,
+          31.511557721742054,
+          -131.20000000000007
+        ],
+        "time": 6390
+      }
+    },
+    {
+      "name": "Full-map source flow has no fabricated outside model depth",
+      "pass": true,
+      "detail": {
+        "active": 235,
+        "directionSource": "source polyline order; illustrative, not model velocity",
+        "displayBounds": [
+          581900,
+          6132000,
+          585300,
+          6134700
+        ],
+        "mappedTracks": 46,
+        "modelBounds": [
+          583000,
+          6132100,
+          584600,
+          6133700
+        ],
+        "source": "mapped watercourses and lakes",
+        "visualOnly": true
+      }
+    },
+    {
+      "name": "Rain and outer source flow remain visible in 2D",
+      "pass": true
+    },
+    {
+      "name": "Main scene with rain and full-map context stays above 30 FPS",
+      "pass": true,
+      "detail": {
+        "medianFps": 30.03003003004053,
+        "sampleFrames": 119
+      }
+    },
+    {
+      "name": "Final short-window PiP analysis controls are visible and operable",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 350.8046875,
+            "name": "EO 可见光",
+            "right": 396.609375,
+            "top": 392.5,
+            "width": 45.8046875
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 399.609375,
+            "name": "水深",
+            "right": 423.609375,
+            "top": 392.5,
+            "width": 24
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 426.609375,
+            "name": "风险",
+            "right": 450.609375,
+            "top": 392.5,
+            "width": 24
+          },
+          {
+            "bottom": 414.5,
+            "height": 21,
+            "left": 453.609375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 543.609375,
+            "top": 393.5,
+            "width": 90
+          },
+          {
+            "bottom": 414.5,
+            "height": 21,
+            "left": 546.609375,
+            "name": "−",
+            "right": 559.859375,
+            "top": 393.5,
+            "width": 13.25
+          },
+          {
+            "bottom": 415.5,
+            "height": 23,
+            "left": 830.4609375,
+            "name": "＋",
+            "right": 846.4609375,
+            "top": 392.5,
+            "width": 16
+          },
+          {
+            "bottom": 415.25,
+            "height": 22.5,
+            "left": 849.4609375,
+            "name": "⛶",
+            "right": 864,
+            "top": 392.75,
+            "width": 14.5390625
+          },
+          {
+            "bottom": 436.5,
+            "height": 3,
+            "left": 392.8046875,
+            "name": "云台偏航",
+            "right": 487.8046875,
+            "top": 433.5,
+            "width": 95
+          },
+          {
+            "bottom": 436.5,
+            "height": 3,
+            "left": 616.3984375,
+            "name": "云台俯仰",
+            "right": 711.3984375,
+            "top": 433.5,
+            "width": 95
+          },
+          {
+            "bottom": 441.5,
+            "height": 13,
+            "left": 833,
+            "name": "复位",
+            "right": 861,
+            "top": 428.5,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 460,
+          "height": 402,
+          "left": 0,
+          "right": 882,
+          "top": 58,
+          "width": 882
+        },
+        "panel": {
+          "bottom": 450,
+          "height": 336,
+          "left": 342.8046875,
+          "right": 872,
+          "top": 114,
+          "width": 529.1953125
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "depth",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 1.5058844585047504,
+            "droneId": "D01",
+            "ground": 11.68941674717729,
+            "stage": 13.233907781582747,
+            "xy": [
+              896.0420973426036,
+              378.01618266048297
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "360px PiP wraps controls inside map bounds",
+      "pass": true,
+      "detail": {
+        "controls": [
+          {
+            "bottom": 475.625,
+            "height": 22,
+            "left": 18,
+            "name": "EO 可见光",
+            "right": 59.234375,
+            "top": 453.625,
+            "width": 41.234375
+          },
+          {
+            "bottom": 475.625,
+            "height": 22,
+            "left": 62.234375,
+            "name": "水深",
+            "right": 84.234375,
+            "top": 453.625,
+            "width": 22
+          },
+          {
+            "bottom": 475.625,
+            "height": 22,
+            "left": 87.234375,
+            "name": "风险",
+            "right": 109.234375,
+            "top": 453.625,
+            "width": 22
+          },
+          {
+            "bottom": 474.875,
+            "height": 20.5,
+            "left": 112.234375,
+            "name": "Ironbow 伪彩White hot 灰阶",
+            "right": 202.234375,
+            "top": 454.375,
+            "width": 90
+          },
+          {
+            "bottom": 474.875,
+            "height": 20.5,
+            "left": 205.234375,
+            "name": "−",
+            "right": 217.875,
+            "top": 454.375,
+            "width": 12.640625
+          },
+          {
+            "bottom": 475.625,
+            "height": 22,
+            "left": 299.2734375,
+            "name": "＋",
+            "right": 314.2734375,
+            "top": 453.625,
+            "width": 15
+          },
+          {
+            "bottom": 475.375,
+            "height": 21.5,
+            "left": 317.2734375,
+            "name": "⛶",
+            "right": 331,
+            "top": 453.875,
+            "width": 13.7265625
+          },
+          {
+            "bottom": 497.125,
+            "height": 3,
+            "left": 54.5,
+            "name": "云台偏航",
+            "right": 149.5,
+            "top": 494.125,
+            "width": 95
+          },
+          {
+            "bottom": 497.125,
+            "height": 3,
+            "left": 183.5,
+            "name": "云台俯仰",
+            "right": 278.5,
+            "top": 494.125,
+            "width": 95
+          },
+          {
+            "bottom": 502.125,
+            "height": 13,
+            "left": 300,
+            "name": "复位",
+            "right": 328,
+            "top": 489.125,
+            "width": 28
+          }
+        ],
+        "map": {
+          "bottom": 600,
+          "height": 500,
+          "left": 0,
+          "right": 349,
+          "top": 100,
+          "width": 349
+        },
+        "panel": {
+          "bottom": 510.625,
+          "height": 297.625,
+          "left": 10,
+          "right": 339,
+          "top": 213,
+          "width": 329
+        },
+        "state": {
+          "droneId": "D01",
+          "full": false,
+          "mode": "depth",
+          "open": true,
+          "palette": "ironbow",
+          "pitch": 0,
+          "reading": {
+            "depth": 1.5058844585047504,
+            "droneId": "D01",
+            "ground": 11.68941674717729,
+            "stage": 13.233907781582747,
+            "xy": [
+              896.0420973426036,
+              378.01618266048297
+            ]
+          },
+          "sourceKind": "scene-render/model-analysis",
+          "yaw": 0,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "No rendering or runtime errors in final regression",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "production": {
+    "url": "https://realkk.icu/floodtrace/",
+    "verifiedAt": "2026-10-26T13:06:39.851Z",
+    "httpsFiles": 35,
+    "allFilesPassed": true,
+    "scrollRetained": true,
+    "followPreserved": true,
+    "pipControlsFit": true,
+    "runtimeErrors": 0,
+    "mainFps": {
+      "viewport": {
+        "width": 1440,
+        "height": 960,
+        "deviceScaleFactor": 2
+      },
+      "frames": 89,
+      "medianFps": 30.4878048780596
+    },
+    "standardPip": {
+      "viewport": {
+        "width": 1440,
+        "height": 960,
+        "deviceScaleFactor": 2
+      },
+      "mode": "eo",
+      "frames": 89,
+      "medianFps": 59.88023952091634,
+      "pixelRatio": 1.5
+    },
+    "localPorts": {
+      "5178": "closed",
+      "5179": "closed",
+      "5181": "closed"
+    }
+  }
+}

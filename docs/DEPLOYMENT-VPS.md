@@ -1,6 +1,6 @@
 # VPS 静态部署
 
-在线演示：**https://realkk.icu/floodtrace/**，当前部署v0.4.2。这个地址由个人VPS的现有HTTPS静态站提供，Mac关机后仍可访问。演示数据已公开在项目仓库，页面没有登录限制。
+在线演示：**https://realkk.icu/floodtrace/**，当前部署v0.4.3。这个地址由个人VPS的现有HTTPS静态站提供，Mac关机后仍可访问。演示数据已公开在项目仓库，页面没有登录限制。
 
 ## 构建与发布
 
@@ -36,3 +36,5 @@ python3 promote_vps.py --archive <上传包> --sha256 <包的SHA-256> --webroot 
 - 原首页及其CSS / JS与原OpenResty配置的部署前后哈希一致，原四个容器仍在运行。
 
 精简记录：`validation/v4.2/deployment-checks.json`。完整截图、上传清单和服务器路径保留在SSD项目`validation/v4.2/`及私人的服务器项目部署记录中。
+
+v0.4.3的雨线、侧栏滚动、小窗控件和全图外围河道显示验收，见[本轮记录](VALIDATION-V043.md)。

@@ -82,3 +82,8 @@ app/dist-vps/
 !validation/v4.2/
 validation/v4.2/*
 !validation/v4.2/deployment-checks.json
+
+!validation/v4.3/
+validation/v4.3/*
+!validation/v4.3/display-checks.json
+!validation/v4.3/browser-checks.json

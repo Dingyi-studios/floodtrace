@@ -55,6 +55,8 @@ const WATER_FRAGMENT=`
  uniform float uVisualTime;
  uniform float uOpacity;
  uniform float uDepthScale;
+ uniform vec2 uWorldSize;
+ uniform float uEdgeFade;
  varying vec2 vUv;
  varying vec3 vWorld;
  void main(){
@@ -78,7 +80,8 @@ const WATER_FRAGMENT=`
   colour=mix(colour,vec3(.70,.85,.80),foam);
   float streak=pow(max(0.,sin(dot(q,normalize(flow+vec2(.003)))*.55+a*.6)),32.)*min(length(flow)*.018,.025);
   colour+=vec3(.50,.76,.73)*streak;
-  gl_FragColor=vec4(colour,mix(.77,.97,1.-exp(-d*.55))*uOpacity*smoothstep(.045,.12,d));
+  vec2 edge=min(vUv,1.-vUv)*uWorldSize;float edgeAlpha=smoothstep(0.,uEdgeFade,min(edge.x,edge.y));
+  gl_FragColor=vec4(colour,mix(.77,.97,1.-exp(-d*.55))*uOpacity*smoothstep(.045,.12,d)*edgeAlpha);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
  }`;
@@ -121,7 +124,7 @@ export class FloodWater{
   for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){pos.push(field.x0+c/(cols-1)*field.width,0,field.z0+r/(rows-1)*field.height);uv.push(c/(cols-1),r/(rows-1))}
   for(let r=0;r<rows-1;r++)for(let c=0;c<cols-1;c++){const i=r*cols+c;indices.push(i,i+cols,i+1,i+1,i+cols,i+cols+1)}
   const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);
-  this.uniforms={uField:{value:field.texture},uGridSize:{value:new THREE.Vector2(cols,rows)},uVisualTime:{value:0},uOpacity:{value:1},uDepthScale:{value:field.meta.kind.includes('historical')?2.5:.25}};
+  this.uniforms={uField:{value:field.texture},uGridSize:{value:new THREE.Vector2(cols,rows)},uVisualTime:{value:0},uWorldSize:{value:new THREE.Vector2(field.width,field.height)},uEdgeFade:{value:60},uOpacity:{value:1},uDepthScale:{value:field.meta.kind.includes('historical')?2.5:.25}};
   const m=new THREE.ShaderMaterial({vertexShader:WATER_VERTEX,fragmentShader:WATER_FRAGMENT,uniforms:this.uniforms,transparent:true,depthWrite:true,side:THREE.DoubleSide});
   this.mesh=new THREE.Mesh(g,m);this.mesh.frustumCulled=false;this.mesh.renderOrder=3;this.group.add(this.mesh);world.add(this.group,this.flow,this.vectors);
   this.createTracers();this.createArrows();this.resetParticles();

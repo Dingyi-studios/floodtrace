@@ -1,3 +1,4 @@
+import{WaterContext}from'./water-context.js';
 import{assetUrl}from'./asset-url.js';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
@@ -140,7 +141,7 @@ export class FloodScene{
   const mg=new THREE.BufferGeometry();mg.setAttribute('position',new THREE.Float32BufferAttribute(marks,3));this.layers.roads.add(new THREE.LineSegments(mg,new THREE.LineBasicMaterial({color:'#e4e3ca',transparent:true,opacity:.75})));
  }
  buildWater(){
-  this.waterView=new FloodWater(this.world,this.field);this.layers.flood=this.waterView.group;this.layers.flow=this.waterView.flow;this.layers.vectors=this.waterView.vectors;this.water=this.waterView.mesh;this.currentDepth=this.field.depth;this.setTime(3600);
+  this.waterView=new FloodWater(this.world,this.field);this.layers.flood=this.waterView.group;this.layers.flow=this.waterView.flow;this.layers.vectors=this.waterView.vectors;this.water=this.waterView.mesh;this.waterContext=new WaterContext(this);this.currentDepth=this.field.depth;this.setTime(3600);
  }
  buildMarkers(){
   this.layers.sensors=new THREE.Group();this.world.add(this.layers.sensors);
@@ -219,7 +220,7 @@ export class FloodScene{
    let t=Math.min(1,(now-this.fly.start)/850);t=1-Math.pow(1-t,3);this.camera.position.lerpVectors(this.fly.from,this.fly.to,t);this.controls.target.lerpVectors(this.fly.fromTarget,this.fly.target,t);if(t>=1)this.fly=null;
   }
   if(!this.fly&&following){const delta=following.clone().sub(this.controls.target);this.camera.position.add(delta);this.controls.target.copy(following)}
-  this.controls.update();this.waterView?.update(now,this.camera,this.controls.target);this.rainView?.update(now,this.camera,this.controls.target);
+  this.controls.update();this.waterView?.update(now,this.camera,this.controls.target);this.waterContext?.update();this.rainView?.update(now,this.camera,this.controls.target,{width:this.container.clientWidth,height:this.container.clientHeight});
   this.renderer.setScissorTest(false);this.renderer.setViewport(0,0,this.container.clientWidth,this.container.clientHeight);if(!this.flightCamera?.state.full)this.renderer.render(this.scene,this.camera);this.flightCamera?.render(now);this.onRender?.();
  }
 }
