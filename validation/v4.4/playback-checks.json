@@ -1,0 +1,19 @@
+{
+  "version": "0.4.4",
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "exact playback end and speed progression in 7200s scenario",
+      "passed": true
+    },
+    {
+      "name": "exact playback end and speed progression in 21600s scenario",
+      "passed": true
+    },
+    {
+      "name": "a negative visual clock interval does not rewind model time",
+      "passed": true
+    }
+  ]
+}

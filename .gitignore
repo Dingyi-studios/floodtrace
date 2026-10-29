@@ -87,3 +87,8 @@ validation/v4.2/*
 validation/v4.3/*
 !validation/v4.3/display-checks.json
 !validation/v4.3/browser-checks.json
+
+!validation/v4.4/
+validation/v4.4/*
+!validation/v4.4/playback-checks.json
+!validation/v4.4/browser-checks.json

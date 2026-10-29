@@ -33,7 +33,8 @@ with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     z.writestr('README-打开静态构建.txt',portable)
     z.write(manifest_path,'build-manifest.json')
     z.write(OUT/'NOTICE-数据与许可.md','NOTICE-数据与许可.md')
-    for name in ['MODEL.md','VIDEO-PARITY.md','VALIDATION-V041.md','DEPLOYMENT-VPS.md','VALIDATION-V043.md']:z.write(ROOT/'docs'/name,'docs/'+name)
+    for name in ['MODEL.md','VIDEO-PARITY.md','VALIDATION-V041.md','DEPLOYMENT-VPS.md','VALIDATION-V043.md','VALIDATION-V044.md']:z.write(ROOT/'docs'/name,'docs/'+name)
+    z.write(ROOT/'deploy/openresty-floodtrace-cache.conf','deploy/openresty-floodtrace-cache.conf')
     for p in (OUT/'third-party').iterdir():
         if p.is_file() and not p.name.startswith('._'):z.write(p,'third-party/'+p.name)
 with zipfile.ZipFile(archive) as z:assert z.testzip() is None

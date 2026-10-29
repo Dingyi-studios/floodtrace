@@ -1,0 +1,584 @@
+{
+  "version": "0.4.4",
+  "environment": "CUA in-app Chromium, local Vite",
+  "passed": 31,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "390px timeline fits page and chart cards remain readable",
+      "passed": true
+    },
+    {
+      "name": "help dialog opens with a labelled title and close-button focus",
+      "passed": true
+    },
+    {
+      "name": "Space on camera mode and Escape on help preserve paused camera",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 320x740",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 390x844",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 650x800",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 800x600",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 1024x768",
+      "passed": true
+    },
+    {
+      "name": "no page overflow at 1440x960",
+      "passed": true
+    },
+    {
+      "name": "reverse Tab stays in help dialog",
+      "passed": true
+    },
+    {
+      "name": "help returns focus to its trigger",
+      "passed": true
+    },
+    {
+      "name": "forward Tab wraps at the end of 26-step dialog",
+      "passed": true
+    },
+    {
+      "name": "tour step closes modal and activates a reviewable scene",
+      "passed": true
+    },
+    {
+      "name": "compound playback ends at exactly 7200s in state, field and controls",
+      "passed": true
+    },
+    {
+      "name": "incident object selection keeps keyboard focus and scroll",
+      "passed": true
+    },
+    {
+      "name": "monitor object selection keeps keyboard focus and scroll",
+      "passed": true
+    },
+    {
+      "name": "drones object selection keeps keyboard focus and scroll",
+      "passed": true
+    },
+    {
+      "name": "response object selection keeps keyboard focus and scroll",
+      "passed": true
+    },
+    {
+      "name": "evacuation object selection keeps keyboard focus and scroll",
+      "passed": true
+    },
+    {
+      "name": "historical scenario preserves all 360 simulated people",
+      "passed": true
+    },
+    {
+      "name": "historical playback ends at exactly 21600s in state and field",
+      "passed": true
+    },
+    {
+      "name": "rain shortcut keeps historical peak visible and capped",
+      "passed": true
+    },
+    {
+      "name": "camera toolbar fits at 320x740",
+      "passed": true
+    },
+    {
+      "name": "camera toolbar fits at 390x844",
+      "passed": true
+    },
+    {
+      "name": "camera toolbar fits at 800x600",
+      "passed": true
+    },
+    {
+      "name": "camera toolbar fits at 1440x960",
+      "passed": true
+    },
+    {
+      "name": "camera expands and restores without changing selected drone or mode",
+      "passed": true
+    },
+    {
+      "name": "response selection retains moving-resource camera follow",
+      "passed": true
+    },
+    {
+      "name": "Space activates 2D without starting playback",
+      "passed": true
+    },
+    {
+      "name": "switching back preserves saved compound time and clears stale camera",
+      "passed": true
+    },
+    {
+      "name": "mobile charts can scroll horizontally to the next chart",
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "client": 305,
+      "header": {
+        "bottom": 118,
+        "height": 118,
+        "left": 0,
+        "right": 305,
+        "top": 0,
+        "width": 305,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 305,
+      "timeline": {
+        "bottom": 908,
+        "height": 290,
+        "left": 0,
+        "right": 305,
+        "top": 618,
+        "width": 305,
+        "x": 0,
+        "y": 618
+      },
+      "width": 320
+    },
+    {
+      "client": 375,
+      "header": {
+        "bottom": 118,
+        "height": 118,
+        "left": 0,
+        "right": 375,
+        "top": 0,
+        "width": 375,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 375,
+      "timeline": {
+        "bottom": 908,
+        "height": 290,
+        "left": 0,
+        "right": 375,
+        "top": 618,
+        "width": 375,
+        "x": 0,
+        "y": 618
+      },
+      "width": 390
+    },
+    {
+      "client": 635,
+      "header": {
+        "bottom": 118,
+        "height": 118,
+        "left": 0,
+        "right": 635,
+        "top": 0,
+        "width": 635,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 635,
+      "timeline": {
+        "bottom": 908,
+        "height": 290,
+        "left": 0,
+        "right": 635,
+        "top": 618,
+        "width": 635,
+        "x": 0,
+        "y": 618
+      },
+      "width": 650
+    },
+    {
+      "client": 785,
+      "header": {
+        "bottom": 100,
+        "height": 100,
+        "left": 0,
+        "right": 785,
+        "top": 0,
+        "width": 785,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 785,
+      "timeline": {
+        "bottom": 656,
+        "height": 236,
+        "left": 0,
+        "right": 517,
+        "top": 420,
+        "width": 517,
+        "x": 0,
+        "y": 420
+      },
+      "width": 800
+    },
+    {
+      "client": 1024,
+      "header": {
+        "bottom": 58,
+        "height": 58,
+        "left": 0,
+        "right": 1024,
+        "top": 0,
+        "width": 1024,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 1024,
+      "timeline": {
+        "bottom": 744,
+        "height": 236,
+        "left": 0,
+        "right": 756,
+        "top": 508,
+        "width": 756,
+        "x": 0,
+        "y": 508
+      },
+      "width": 1024
+    },
+    {
+      "client": 1440,
+      "header": {
+        "bottom": 58,
+        "height": 58,
+        "left": 0,
+        "right": 1440,
+        "top": 0,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "scroll": 1440,
+      "timeline": {
+        "bottom": 936,
+        "height": 236,
+        "left": 0,
+        "right": 1166.40625,
+        "top": 700,
+        "width": 1166.40625,
+        "x": 0,
+        "y": 700
+      },
+      "width": 1440
+    }
+  ],
+  "cameras": [
+    {
+      "size": [
+        320,
+        740
+      ],
+      "fits": true,
+      "frame": {
+        "bottom": 501.125,
+        "height": 270.125,
+        "left": 10,
+        "right": 295,
+        "top": 231,
+        "width": 285,
+        "x": 10,
+        "y": 231
+      },
+      "map": {
+        "bottom": 618,
+        "height": 500,
+        "left": 0,
+        "right": 305,
+        "top": 118,
+        "width": 305,
+        "x": 0,
+        "y": 118
+      },
+      "toolbar": {
+        "bottom": 472.125,
+        "height": 34,
+        "left": 11,
+        "right": 294,
+        "top": 438.125,
+        "width": 283,
+        "x": 11,
+        "y": 438.125
+      }
+    },
+    {
+      "size": [
+        390,
+        844
+      ],
+      "fits": true,
+      "frame": {
+        "bottom": 544.875,
+        "height": 313.875,
+        "left": 10,
+        "right": 365,
+        "top": 231,
+        "width": 355,
+        "x": 10,
+        "y": 231
+      },
+      "map": {
+        "bottom": 618,
+        "height": 500,
+        "left": 0,
+        "right": 375,
+        "top": 118,
+        "width": 375,
+        "x": 0,
+        "y": 118
+      },
+      "toolbar": {
+        "bottom": 515.875,
+        "height": 34,
+        "left": 11,
+        "right": 364,
+        "top": 481.875,
+        "width": 353,
+        "x": 11,
+        "y": 481.875
+      }
+    },
+    {
+      "size": [
+        800,
+        600
+      ],
+      "fits": true,
+      "frame": {
+        "bottom": 410,
+        "height": 250,
+        "left": 10,
+        "right": 507,
+        "top": 160,
+        "width": 497,
+        "x": 10,
+        "y": 160
+      },
+      "map": {
+        "bottom": 420,
+        "height": 320,
+        "left": 0,
+        "right": 517,
+        "top": 100,
+        "width": 517,
+        "x": 0,
+        "y": 100
+      },
+      "toolbar": {
+        "bottom": 381,
+        "height": 34,
+        "left": 11,
+        "right": 506,
+        "top": 347,
+        "width": 495,
+        "x": 11,
+        "y": 347
+      }
+    },
+    {
+      "size": [
+        1440,
+        960
+      ],
+      "fits": true,
+      "frame": {
+        "bottom": 606,
+        "height": 492,
+        "left": 516.40625,
+        "right": 1156.40625,
+        "top": 114,
+        "width": 640,
+        "x": 516.40625,
+        "y": 114
+      },
+      "map": {
+        "bottom": 700,
+        "height": 642,
+        "left": 0,
+        "right": 1166.40625,
+        "top": 58,
+        "width": 1166.40625,
+        "x": 0,
+        "y": 58
+      },
+      "toolbar": {
+        "bottom": 577,
+        "height": 34,
+        "left": 517.40625,
+        "right": 1155.40625,
+        "top": 543,
+        "width": 638,
+        "x": 517.40625,
+        "y": 543
+      }
+    }
+  ],
+  "scrollScopes": [
+    {
+      "workspace": "incident",
+      "before": {
+        "focus": "G71F05R",
+        "id": "G71F05R",
+        "lists": [
+          [
+            "objects",
+            0
+          ]
+        ],
+        "top": 46
+      },
+      "after": {
+        "focus": "G71F05R",
+        "id": "G71F05R",
+        "lists": [
+          [
+            "objects",
+            0
+          ]
+        ],
+        "top": 46
+      }
+    },
+    {
+      "workspace": "monitor",
+      "before": {
+        "focus": "G72F040",
+        "id": "G72F040",
+        "lists": [
+          [
+            "objects",
+            0
+          ]
+        ],
+        "top": 0
+      },
+      "after": {
+        "focus": "G72F040",
+        "id": "G72F040",
+        "lists": [
+          [
+            "objects",
+            0
+          ]
+        ],
+        "top": 0
+      }
+    },
+    {
+      "workspace": "drones",
+      "before": {
+        "focus": "D06",
+        "id": "D06",
+        "lists": [
+          [
+            "mission-list",
+            84
+          ]
+        ],
+        "top": 0
+      },
+      "after": {
+        "focus": "D06",
+        "id": "D06",
+        "lists": [
+          [
+            "mission-list",
+            84
+          ]
+        ],
+        "top": 0
+      }
+    },
+    {
+      "workspace": "response",
+      "before": {
+        "focus": "B02",
+        "id": "B02",
+        "lists": [
+          [
+            "mission-list",
+            408
+          ]
+        ],
+        "top": 98
+      },
+      "after": {
+        "focus": "B02",
+        "id": "B02",
+        "lists": [
+          [
+            "mission-list",
+            408
+          ]
+        ],
+        "top": 98
+      }
+    },
+    {
+      "workspace": "evacuation",
+      "before": {
+        "focus": "E18",
+        "id": "E18",
+        "lists": [
+          [
+            "evac-groups",
+            0
+          ]
+        ],
+        "top": 1365
+      },
+      "after": {
+        "focus": "E18",
+        "id": "E18",
+        "lists": [
+          [
+            "evac-groups",
+            0
+          ]
+        ],
+        "top": 1365.5
+      }
+    }
+  ],
+  "coverageLimit": "Targeted patch regression; not a new 26-segment visual acceptance or 30-minute soak.",
+  "production": {
+    "version": "假设雨洪 · 非历史重建v0.4.4 · 场景与观察",
+    "mobileFits": true,
+    "cacheRegression": "Initial ordinary navigation reused cached v0.4.3 HTML; after server revalidation rules and normal reload, v0.4.4 loaded.",
+    "dialogFocus": true,
+    "cameraKeyboard": true,
+    "errors": [],
+    "export": {
+      "version": "v0.4.4",
+      "selected": "D02",
+      "cameraMode": "depth"
+    },
+    "staticFiles": {
+      "passed": 35,
+      "failed": 0
+    },
+    "cacheHeaders": {
+      "entry": "no-cache",
+      "manifest": "no-cache",
+      "data": "no-cache"
+    }
+  }
+}

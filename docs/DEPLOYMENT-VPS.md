@@ -1,6 +1,6 @@
 # VPS 静态部署
 
-在线演示：**https://realkk.icu/floodtrace/**，当前部署v0.4.3。这个地址由个人VPS的现有HTTPS静态站提供，Mac关机后仍可访问。演示数据已公开在项目仓库，页面没有登录限制。
+在线演示：**https://realkk.icu/floodtrace/**，当前部署v0.4.4。这个地址由个人VPS的现有HTTPS静态站提供，Mac关机后仍可访问。演示数据已公开在项目仓库，页面没有登录限制。
 
 ## 构建与发布
 
@@ -38,3 +38,11 @@ python3 promote_vps.py --archive <上传包> --sha256 <包的SHA-256> --webroot 
 精简记录：`validation/v4.2/deployment-checks.json`。完整截图、上传清单和服务器路径保留在SSD项目`validation/v4.2/`及私人的服务器项目部署记录中。
 
 v0.4.3的雨线、侧栏滚动、小窗控件和全图外围河道显示验收，见[本轮记录](VALIDATION-V043.md)。
+
+当前v0.4.4补充窄屏时间轴、键盘操作、对话框焦点和回放终点同步；见[本轮记录](VALIDATION-V044.md)。
+
+## 入口与固定URL缓存
+
+已在现有站点server块内应用[缓存规则片段](../deploy/openresty-floodtrace-cache.conf)：入口`index.html`、发布清单和`data/`固定URL通过`expires -1`生成`Cache-Control: no-cache`，每次使用前验证缓存。带内容哈希的JS/CSS继续使用独立文件名。站点目录请求会内部定位到该index规则。
+
+这是在v0.4.4线上复查中发现并修复的旧HTML缓存问题。已缓存旧入口的浏览器进行一次普通刷新后使用新版规则。规则修改前需备份当前站点配置，先执行OpenResty配置语法检查，再平滑reload；保持原站点root和TLS设置。回退静态版本不需要撤销缓存规则。
